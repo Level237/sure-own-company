@@ -2,17 +2,17 @@
     <div class="container mx-auto px-6 md:px-10 flex items-center justify-between max-w-7xl">
         <div class="flex-shrink-0">
             <a href="/">
-                <img src="{{ asset('assets/images/white-logo.png') }}" alt="Logo" class="h-12 w-auto">
+                <!-- White Logo (Initial) -->
+                <img src="{{ asset('assets/images/white-logo.png') }}" alt="Logo" id="logo-white" class="h-12 w-auto">
+                <!-- Dark Logo (Scrolled) -->
+                <img src="{{ asset('assets/images/logo.png') }}" alt="Logo" id="logo-dark" class="h-12 w-auto hidden">
             </a>
         </div>
 
-        <nav class="hidden lg:flex items-center space-x-10">
-            <a href="#about" class="text-sm font-medium text-white/90 hover:text-primary transition-colors">A propos de
-                nous</a>
-            <a href="#services" class="text-sm font-medium text-white/90 hover:text-primary transition-colors">Nos
-                services</a>
-            <a href="#contact"
-                class="text-sm font-medium text-white/90 hover:text-primary transition-colors">Contactez-nous</a>
+        <nav id="nav-links" class="hidden lg:flex items-center space-x-10 text-white/90 transition-colors duration-300">
+            <a href="#about" class="text-sm font-medium hover:text-primary transition-colors">A propos de nous</a>
+            <a href="#services" class="text-sm font-medium hover:text-primary transition-colors">Nos services</a>
+            <a href="#contact" class="text-sm font-medium hover:text-primary transition-colors">Contactez-nous</a>
         </nav>
 
         <div class="flex items-center">
@@ -46,6 +46,9 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const header = document.getElementById('main-header');
+        const logoWhite = document.getElementById('logo-white');
+        const logoDark = document.getElementById('logo-dark');
+        const navLinks = document.getElementById('nav-links');
         const menuToggle = document.getElementById('menuToggle');
         const mobileMenu = document.getElementById('mobileMenu');
         const spans = menuToggle.querySelectorAll('span');
@@ -53,11 +56,38 @@
         // Scroll Effect
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                header.classList.add('bg-black/80', 'backdrop-blur-xl', 'py-4', 'border-b', 'border-white/10');
+                // Header Background & Height
+                header.classList.add('bg-white', 'shadow-md', 'py-4');
                 header.classList.remove('py-6');
+                
+                // Logo Switch
+                logoWhite.classList.add('hidden');
+                logoDark.classList.remove('hidden');
+                
+                // Nav Links Color
+                navLinks.classList.remove('text-white/90');
+                navLinks.classList.add('text-slate-800');
+                
+                // Menu Toggle Spans Color
+                spans.forEach(span => {
+                    span.classList.remove('bg-white');
+                    span.classList.add('bg-slate-800');
+                });
             } else {
-                header.classList.remove('bg-black/80', 'backdrop-blur-xl', 'py-4', 'border-b', 'border-white/10');
+                // Restore Initial State
+                header.classList.remove('bg-white', 'shadow-md', 'py-4');
                 header.classList.add('py-6');
+                
+                logoWhite.classList.remove('hidden');
+                logoDark.classList.add('hidden');
+                
+                navLinks.classList.add('text-white/90');
+                navLinks.classList.remove('text-slate-800');
+                
+                spans.forEach(span => {
+                    span.classList.add('bg-white');
+                    span.classList.remove('bg-slate-800');
+                });
             }
         });
 
