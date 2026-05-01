@@ -10,7 +10,7 @@
         </div>
 
         <nav id="nav-links" class="hidden lg:flex items-center space-x-10 text-white/90 transition-colors duration-300">
-            <a href="#about" class="text-sm font-medium hover:text-primary transition-colors">A propos de nous</a>
+            <a href="#about" class="text-sm font-bold hover:text-primary transition-colors">A propos de nous</a>
             <a href="#services" class="text-sm font-medium hover:text-primary transition-colors">Nos services</a>
             <a href="#contact" class="text-sm font-medium hover:text-primary transition-colors">Contactez-nous</a>
         </nav>
@@ -59,15 +59,15 @@
                 // Header Background & Height
                 header.classList.add('bg-white', 'shadow-md', 'py-4');
                 header.classList.remove('py-6');
-                
+
                 // Logo Switch
                 logoWhite.classList.add('hidden');
                 logoDark.classList.remove('hidden');
-                
+
                 // Nav Links Color
                 navLinks.classList.remove('text-white/90');
                 navLinks.classList.add('text-slate-800');
-                
+
                 // Menu Toggle Spans Color
                 spans.forEach(span => {
                     span.classList.remove('bg-white');
@@ -77,13 +77,13 @@
                 // Restore Initial State
                 header.classList.remove('bg-white', 'shadow-md', 'py-4');
                 header.classList.add('py-6');
-                
+
                 logoWhite.classList.remove('hidden');
                 logoDark.classList.add('hidden');
-                
+
                 navLinks.classList.add('text-white/90');
                 navLinks.classList.remove('text-slate-800');
-                
+
                 spans.forEach(span => {
                     span.classList.add('bg-white');
                     span.classList.remove('bg-slate-800');
