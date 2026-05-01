@@ -16,10 +16,10 @@
                 </div>
                 <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
                     <p>
-                        C’est une équipe engagée, tournée vers vos enjeux.
-                        Nous accompagnons les entreprises des secteurs
-                        publics, parapublics et privés au cameroun, avec une
-                        approche fondée sur:
+                        Nous accompagnons les entreprises avec des solutions logistiques sécurisées et efficaces,
+                        adaptées aux réalités du terrain.
+                        Notre mission : garantir la continuité de vos opérations grâce à un service fiable, réactif et
+                        sur mesure.
                     </p>
 
                 </div>

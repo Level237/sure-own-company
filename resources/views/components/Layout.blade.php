@@ -14,6 +14,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-black text-white font-sans selection:bg-primary selection:text-white">
+    <x-Loader />
     <x-Homepage.Header />
 
     <main>

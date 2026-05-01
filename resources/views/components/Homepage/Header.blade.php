@@ -10,9 +10,9 @@
         </div>
 
         <nav id="nav-links" class="hidden lg:flex items-center space-x-10 text-white/90 transition-colors duration-300">
-            <a href="#about" class="text-sm font-bold hover:text-primary transition-colors">A propos de nous</a>
-            <a href="#services" class="text-sm font-medium hover:text-primary transition-colors">Nos services</a>
-            <a href="#contact" class="text-sm font-medium hover:text-primary transition-colors">Contactez-nous</a>
+            <a href="#about" class="text-lg font-bold hover:text-primary transition-colors">A propos de nous</a>
+            <a href="#services" class="text-lg font-bold hover:text-primary transition-colors">Nos services</a>
+            <a href="#contact" class="text-lg font-bold hover:text-primary transition-colors">Contactez-nous</a>
         </nav>
 
         <div class="flex items-center">
