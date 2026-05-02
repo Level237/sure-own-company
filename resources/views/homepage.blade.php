@@ -1,4 +1,4 @@
-<x-Layout>
+<x-Layout :isHomepage="true">
     <x-Homepage.Hero />
     <x-Homepage.About />
     <x-Homepage.Services />
