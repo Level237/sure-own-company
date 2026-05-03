@@ -11,10 +11,10 @@
     <!-- Content -->
     <div class="relative z-10 container mx-auto px-6 md:px-10 h-full flex flex-col justify-center max-w-7xl">
         <div class="max-w-3xl space-y-4">
-            <div class="inline-block px-4 py-1 bg-primary text-white text-sm font-bold rounded-full animate-fade-in">
+            <div class="inline-block  px-4 py-1 bg-primary text-white text-sm font-bold rounded-full animate-fade-in">
                 {{ $category }}
             </div>
-            <h1 class="text-4xl md:text-6xl font-black text-white leading-tight animate-slide-in-left">
+            <h1 class="text-4xl max-sm:text-3xl md:text-6xl font-black text-white leading-tight animate-slide-in-left">
                 {{ $title }}
             </h1>
             <div class="w-20 h-1 bg-primary animate-width-grow"></div>
@@ -25,11 +25,11 @@
     <div class="absolute bottom-8 left-0 w-full z-10">
         <div class="container mx-auto px-6 md:px-10 max-w-7xl">
             <nav class="flex text-white/60 text-sm font-medium space-x-2">
-                <a href="/" class="hover:text-primary transition-colors">Accueil</a>
+                <a href="/" class="hover:text-primary max-sm:text-xs transition-colors">Accueil</a>
                 <span>/</span>
-                <a href="/nos-services" class="hover:text-primary transition-colors">Nos Services</a>
+                <a href="/nos-services" class="hover:text-primary max-sm:text-xs transition-colors">Nos Services</a>
                 <span>/</span>
-                <span class="text-white">{{ $title }}</span>
+                <span class="text-white max-sm:text-xs">{{ $title }}</span>
             </nav>
         </div>
     </div>
@@ -37,13 +37,25 @@
 
 <style>
     @keyframes slide-in-left {
-        from { opacity: 0; transform: translateX(-30px); }
-        to { opacity: 1; transform: translateX(0); }
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     @keyframes fade-in {
-        from { opacity: 0; }
-        to { opacity: 1; }
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     .animate-slide-in-left {
@@ -55,8 +67,13 @@
     }
 
     @keyframes zoom-slow {
-        from { transform: scale(1.1); }
-        to { transform: scale(1); }
+        from {
+            transform: scale(1.1);
+        }
+
+        to {
+            transform: scale(1);
+        }
     }
 
     .animate-zoom-slow {

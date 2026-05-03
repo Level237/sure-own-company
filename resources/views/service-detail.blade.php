@@ -109,37 +109,38 @@
                         @endforeach
                     </div>
 
-                    <!-- Process Timeline -->
-                    <div class="space-y-10 pt-8">
-                        <h2 class="text-3xl font-black text-slate-900 text-center">Notre Processus</h2>
-                        <div class="relative">
-                            <!-- Vertical Line -->
-                            <div
-                                class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-100 md:-translate-x-0.5">
-                            </div>
+                    <!-- Process Section -->
+                    <div class="space-y-12 pt-12">
+                        <div class="text-center space-y-4">
+                            <h2 class="text-3xl md:text-4xl font-black text-slate-900">Notre Processus</h2>
+                            <p class="text-slate-500 max-w-xl mx-auto">Une méthodologie rigoureuse pour garantir une qualité de service constante et une sécurité totale.</p>
+                        </div>
 
-                            <div class="space-y-12">
-                                @foreach($service['process'] as $index => $step)
-                                    <div class="relative flex flex-col md:flex-row items-center group">
-                                        <div
-                                            class="flex-1 w-full md:pr-12 md:text-right {{ $index % 2 != 0 ? 'md:order-2 md:text-left md:pl-12 md:pr-0' : '' }}">
-                                            <div
-                                                class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm group-hover:shadow-md transition-shadow">
-                                                <h4 class="text-lg font-bold text-slate-900 mb-1">{{ $step['title'] }}</h4>
-                                                <p class="text-slate-500 text-sm">{{ $step['desc'] }}</p>
-                                            </div>
-                                        </div>
-
-                                        <div
-                                            class="absolute left-0 md:left-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white shadow-md z-10 md:-translate-x-4">
-                                        </div>
-
-                                        <div class="flex-1 hidden md:block {{ $index % 2 != 0 ? 'order-1' : '' }}"></div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+                            @foreach($service['process'] as $index => $step)
+                            <div class="group relative p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+                                <!-- Step Number -->
+                                <div class="absolute -top-4 -right-4 text-8xl font-black text-slate-50 opacity-[0.03] group-hover:opacity-[0.08] group-hover:scale-110 transition-all duration-700 select-none">
+                                    0{{ $index + 1 }}
+                                </div>
+                                
+                                <div class="relative z-10 space-y-6">
+                                    <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center font-black text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+                                        {{ $index + 1 }}
                                     </div>
-                                @endforeach
+                                    <div class="space-y-2">
+                                        <h4 class="text-2xl font-bold text-slate-900">{{ $step['title'] }}</h4>
+                                        <p class="text-slate-600 leading-relaxed">{{ $step['desc'] }}</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Decorative element -->
+                                <div class="absolute bottom-0 left-0 w-0 h-1.5 bg-primary group-hover:w-full transition-all duration-700"></div>
                             </div>
+                            @endforeach
                         </div>
                     </div>
+
                 </div>
 
                 <!-- Sidebar -->
