@@ -17,3 +17,7 @@ Route::get('/nos-services', function () {
 Route::get('/nos-services/{slug}', function ($slug) {
     return view('service-detail', ['slug' => $slug]);
 });
+
+Route::get('/contactez-nous', function () {
+    return view('contact');
+});

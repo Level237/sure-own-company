@@ -19,8 +19,9 @@
             <a href="/" class="text-lg font-bold hover:text-primary transition-colors">Accueil</a>
             <a href="/a-propos-de-nous" class="text-lg font-bold hover:text-primary transition-colors">A propos de
                 nous</a>
-            <a href="#services" class="text-lg font-bold hover:text-primary transition-colors">Nos services</a>
-            <a href="#contact" class="text-lg font-bold hover:text-primary transition-colors">Contactez-nous</a>
+            <a href="/nos-services" class="text-lg font-bold hover:text-primary transition-colors">Nos services</a>
+            <a href="/contactez-nous" class="text-lg font-bold hover:text-primary transition-colors">Contactez-nous</a>
+
         </nav>
 
         <div class="flex items-center">
@@ -44,10 +45,11 @@
         <a href="/" class="text-2xl font-semibold text-white hover:text-primary transition-colors">Accueil</a>
         <a href="/a-propos-de-nous" class="text-2xl font-semibold text-white hover:text-primary transition-colors">A
             propos de nous</a>
-        <a href="#services" class="text-2xl font-semibold text-white hover:text-primary transition-colors">Nos
+        <a href="/nos-services" class="text-2xl font-semibold text-white hover:text-primary transition-colors">Nos
             services</a>
-        <a href="#contact"
+        <a href="/contactez-nous"
             class="text-2xl font-semibold text-white hover:text-primary transition-colors">Contactez-nous</a>
+
         <a href="#partner" class="px-8 py-3 rounded-full bg-primary text-white font-semibold text-lg">Devenir
             partenaire</a>
     </div>

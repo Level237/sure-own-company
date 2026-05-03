@@ -31,21 +31,22 @@
             <div class="space-y-8 animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-100">
                 <h3 class="text-xl font-bold uppercase tracking-wider">Navigation</h3>
                 <nav class="flex flex-col space-y-4">
-                    <a href="#about"
+                    <a href="/a-propos-de-nous"
                         class="text-white/70 hover:text-white transition-colors text-lg flex items-center gap-2 group">
                         <span class="w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-4"></span>
                         A propos de nous
                     </a>
-                    <a href="#services"
+                    <a href="/nos-services"
                         class="text-white/70 hover:text-white transition-colors text-lg flex items-center gap-2 group">
                         <span class="w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-4"></span>
                         Nos services
                     </a>
-                    <a href="#why-choose-us"
+                    <a href="/contactez-nous"
                         class="text-white/70 hover:text-white transition-colors text-lg flex items-center gap-2 group">
                         <span class="w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-4"></span>
                         Contactez-nous
                     </a>
+
                     <a href="#partners"
                         class="text-white/70 hover:text-white transition-colors text-lg flex items-center gap-2 group">
                         <span class="w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-4"></span>
