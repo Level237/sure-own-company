@@ -9,3 +9,11 @@ Route::get('/', function () {
 Route::get('/a-propos-de-nous', function () {
     return view('about');
 });
+
+Route::get('/nos-services', function () {
+    return view('services');
+});
+
+Route::get('/nos-services/{slug}', function ($slug) {
+    return view('service-detail', ['slug' => $slug]);
+});
