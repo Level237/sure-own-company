@@ -81,12 +81,8 @@
     $service = $services[$slug] ?? $services['transport'];
 @endphp
 
-<x-Layout :headerWhite="true">
-    <x-Services.DetailHero 
-        :title="$service['title']" 
-        :category="$service['category']" 
-        :image="$service['image']" 
-    />
+<x-Layout>
+    <x-Services.DetailHero :title="$service['title']" :category="$service['category']" :image="$service['image']" />
 
     <section class="py-24 bg-white">
         <div class="container mx-auto px-6 md:px-10 max-w-7xl">
@@ -102,12 +98,14 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         @foreach($service['features'] as $title => $desc)
-                        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 group hover:bg-primary transition-all duration-500">
-                            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-white transition-colors">{{ $title }}</h3>
-                            <p class="text-slate-600 group-hover:text-white/80 transition-colors leading-relaxed">
-                                {{ $desc }}
-                            </p>
-                        </div>
+                            <div
+                                class="p-8 rounded-3xl bg-slate-50 border border-slate-100 group hover:bg-primary transition-all duration-500">
+                                <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-white transition-colors">
+                                    {{ $title }}</h3>
+                                <p class="text-slate-600 group-hover:text-white/80 transition-colors leading-relaxed">
+                                    {{ $desc }}
+                                </p>
+                            </div>
                         @endforeach
                     </div>
 
@@ -116,22 +114,28 @@
                         <h2 class="text-3xl font-black text-slate-900 text-center">Notre Processus</h2>
                         <div class="relative">
                             <!-- Vertical Line -->
-                            <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-100 md:-translate-x-0.5"></div>
-                            
+                            <div
+                                class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-100 md:-translate-x-0.5">
+                            </div>
+
                             <div class="space-y-12">
                                 @foreach($service['process'] as $index => $step)
-                                <div class="relative flex flex-col md:flex-row items-center group">
-                                    <div class="flex-1 w-full md:pr-12 md:text-right {{ $index % 2 != 0 ? 'md:order-2 md:text-left md:pl-12 md:pr-0' : '' }}">
-                                        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm group-hover:shadow-md transition-shadow">
-                                            <h4 class="text-lg font-bold text-slate-900 mb-1">{{ $step['title'] }}</h4>
-                                            <p class="text-slate-500 text-sm">{{ $step['desc'] }}</p>
+                                    <div class="relative flex flex-col md:flex-row items-center group">
+                                        <div
+                                            class="flex-1 w-full md:pr-12 md:text-right {{ $index % 2 != 0 ? 'md:order-2 md:text-left md:pl-12 md:pr-0' : '' }}">
+                                            <div
+                                                class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm group-hover:shadow-md transition-shadow">
+                                                <h4 class="text-lg font-bold text-slate-900 mb-1">{{ $step['title'] }}</h4>
+                                                <p class="text-slate-500 text-sm">{{ $step['desc'] }}</p>
+                                            </div>
                                         </div>
+
+                                        <div
+                                            class="absolute left-0 md:left-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white shadow-md z-10 md:-translate-x-4">
+                                        </div>
+
+                                        <div class="flex-1 hidden md:block {{ $index % 2 != 0 ? 'order-1' : '' }}"></div>
                                     </div>
-                                    
-                                    <div class="absolute left-0 md:left-1/2 w-8 h-8 rounded-full bg-primary border-4 border-white shadow-md z-10 md:-translate-x-4"></div>
-                                    
-                                    <div class="flex-1 hidden md:block {{ $index % 2 != 0 ? 'order-1' : '' }}"></div>
-                                </div>
                                 @endforeach
                             </div>
                         </div>
@@ -145,12 +149,14 @@
                         <h3 class="text-xl font-bold mb-6">Nos autres services</h3>
                         <div class="space-y-4">
                             @foreach($services as $sSlug => $sData)
-                            @if($sSlug != $slug)
-                            <a href="/nos-services/{{ $sSlug }}" class="flex items-center justify-between p-4 rounded-xl border border-white/10 hover:bg-primary hover:border-primary transition-all group">
-                                <span class="font-bold">{{ $sData['title'] }}</span>
-                                <x-lucide-chevron-right class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                            </a>
-                            @endif
+                                @if($sSlug != $slug)
+                                    <a href="/nos-services/{{ $sSlug }}"
+                                        class="flex items-center justify-between p-4 rounded-xl border border-white/10 hover:bg-primary hover:border-primary transition-all group">
+                                        <span class="font-bold">{{ $sData['title'] }}</span>
+                                        <x-lucide-chevron-right
+                                            class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                    </a>
+                                @endif
                             @endforeach
                         </div>
                     </div>
@@ -159,8 +165,10 @@
                     <div class="bg-primary p-8 rounded-3xl text-white relative overflow-hidden">
                         <div class="relative z-10">
                             <h3 class="text-2xl font-bold mb-4">Besoin d'un devis ?</h3>
-                            <p class="text-white/80 mb-6 text-sm">Nos experts sont à votre disposition pour étudier vos besoins et vous proposer une solution sur mesure.</p>
-                            <a href="/#contact" class="inline-flex items-center justify-center w-full py-4 rounded-xl bg-white text-primary font-bold hover:bg-slate-900 hover:text-white transition-all">
+                            <p class="text-white/80 mb-6 text-sm">Nos experts sont à votre disposition pour étudier vos
+                                besoins et vous proposer une solution sur mesure.</p>
+                            <a href="/#contact"
+                                class="inline-flex items-center justify-center w-full py-4 rounded-xl bg-white text-primary font-bold hover:bg-slate-900 hover:text-white transition-all">
                                 Nous contacter
                             </a>
                         </div>
