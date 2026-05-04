@@ -25,7 +25,7 @@
         </nav>
 
         <div class="flex items-center">
-            <a href="#partner" id="partner-btn"
+            <a href="/devenir-partenaire" id="partner-btn"
                 class="hidden sm:inline-flex items-center justify-center px-8 py-3 rounded-full font-semibold text-sm transition-all hover:-translate-y-0.5 hover:shadow-lg
                 {{ !$isHomepage && $isWhite ? 'bg-white text-primary border border-primary' : 'bg-primary text-white' }}">
                 Devenir partenaire
@@ -50,7 +50,7 @@
         <a href="/contactez-nous"
             class="text-2xl font-semibold text-white hover:text-primary transition-colors">Contactez-nous</a>
 
-        <a href="#partner" class="px-8 py-3 rounded-full bg-primary text-white font-semibold text-lg">Devenir
+        <a href="/devenir-partenaire" class="px-8 py-3 rounded-full bg-primary text-white font-semibold text-lg">Devenir
             partenaire</a>
     </div>
 </header>

@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
 
             <!-- Column 1: Brand & Social -->
-            <div class="space-y-8 animate-on-scroll opacity-0 translate-y-10 transition-all duration-700">
+            <div class="space-y-8">
                 <a href="/" class="inline-block">
                     <img src="{{ asset('assets/images/white-logo.png') }}" alt="SureOwn Logo" class="h-16 w-auto">
                 </a>
@@ -28,7 +28,7 @@
             </div>
 
             <!-- Column 2: Navigation -->
-            <div class="space-y-8 animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-100">
+            <div class="space-y-8">
                 <h3 class="text-xl font-bold uppercase tracking-wider">Navigation</h3>
                 <nav class="flex flex-col space-y-4">
                     <a href="/a-propos-de-nous"
@@ -47,7 +47,7 @@
                         Contactez-nous
                     </a>
 
-                    <a href="#partners"
+                    <a href="/devenir-partenaire"
                         class="text-white/70 hover:text-white transition-colors text-lg flex items-center gap-2 group">
                         <span class="w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-4"></span>
                         Devenir Partenaire
@@ -56,7 +56,7 @@
             </div>
 
             <!-- Column 3: Coordonnées -->
-            <div class="space-y-8 animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-200">
+            <div class="space-y-8">
                 <h3 class="text-xl font-bold uppercase tracking-wider">Nos Coordonn&eacute;es</h3>
                 <ul class="space-y-6">
                     <li class="flex items-start gap-4">
@@ -94,7 +94,7 @@
             </div>
 
             <!-- Column 4: Bureaux & Horaires -->
-            <div class="space-y-8 animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 delay-300">
+            <div class="space-y-8">
                 <h3 class="text-xl font-bold uppercase tracking-wider">Bureaux & Horaires</h3>
                 <ul class="space-y-6">
                     <li class="flex items-start gap-4">

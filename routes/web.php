@@ -21,3 +21,7 @@ Route::get('/nos-services/{slug}', function ($slug) {
 Route::get('/contactez-nous', function () {
     return view('contact');
 });
+
+Route::get('/devenir-partenaire', function () {
+    return view('partner');
+});
