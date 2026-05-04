@@ -133,13 +133,7 @@
         <div
             class="mt-20 pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-white/50 text-sm">
             <p>&copy; {{ date('Y') }} SureOwn Company. Tous droits r&eacute;serv&eacute;s.</p>
-            <div class="flex gap-8">
-                <a href="#" class="hover:text-white transition-colors uppercase font-bold tracking-tighter">Mentions
-                    l&eacute;gales</a>
-                <a href="#"
-                    class="hover:text-white transition-colors uppercase font-bold tracking-tighter">Confidentialit&eacute;</a>
-                <a href="#" class="hover:text-white transition-colors uppercase font-bold tracking-tighter">Cookies</a>
-            </div>
+
         </div>
     </div>
 </footer>
