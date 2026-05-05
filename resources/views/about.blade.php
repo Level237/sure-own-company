@@ -1,4 +1,6 @@
-<x-Layout>
+<x-Layout title="SureOwnCompany | A propos de nous" image="{{ asset('assets/images/about1.png') }}" description="Fondée avec la vision de révolutionner le transport de carburant et la logistique industrielle,
+                        SureOwnCompany s'est imposée comme un partenaire de confiance pour les entreprises exigeantes."
+    keywords="transport carburant sécurisé,A propos de nous, logistique industrielle de pointe, livraison hydrocarbures B2B, flotte camions citernes, approvisionnement industriel traçable, expert logistique SureOwnCompany, transport matières critiques">
     <x-About.Hero />
 
     <!-- Notre Histoire -->
@@ -23,16 +25,7 @@
                         Depuis nos débuts, nous avons investi dans une flotte moderne et des technologies de pointe pour
                         garantir une sécurité maximale et une traçabilité totale à chaque étape de l'approvisionnement.
                     </p>
-                    <div class="grid grid-cols-2 gap-8 pt-4">
-                        <div>
-                            <div class="text-4xl font-black text-primary mb-2">10+</div>
-                            <div class="text-slate-500 font-medium">Années d'expérience</div>
-                        </div>
-                        <div>
-                            <div class="text-4xl font-black text-primary mb-2">500+</div>
-                            <div class="text-slate-500 font-medium">Clients satisfaits</div>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="relative">
                     <div class="rounded-3xl overflow-hidden shadow-2xl">

@@ -1,4 +1,7 @@
-<x-Layout>
+<x-Layout title="SureOwnCompany | Contactez-nous" image="{{ asset('assets/images/slider2.png') }}" description="Découvrez l'étendue de nos services conçus pour répondre aux défis les plus complexes de l'industrie
+                    énergétique."
+    keywords="transport carburant sécurisé,Services, logistique industrielle de pointe, livraison hydrocarbures B2B, flotte camions citernes, approvisionnement industriel traçable, expert logistique SureOwnCompany, transport matières critiques">
+
     <x-Contact.Hero />
 
     <section class="py-24 bg-white overflow-hidden">
@@ -68,13 +71,15 @@
                         </div>
 
                         @if (session('success'))
-                            <div class="p-4 mb-6 bg-green-50 border border-green-200 text-green-700 rounded-2xl flex items-center gap-3">
+                            <div
+                                class="p-4 mb-6 bg-green-50 border border-green-200 text-green-700 rounded-2xl flex items-center gap-3">
                                 <x-lucide-check-circle class="w-6 h-6 text-green-500" />
                                 <p class="font-medium">{{ session('success') }}</p>
                             </div>
                         @endif
 
-                        <form action="{{ route('contact.send') }}" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                        <form action="{{ route('contact.send') }}" method="POST"
+                            class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
                             @csrf
                             <!-- Prénom -->
                             <div class="space-y-2">

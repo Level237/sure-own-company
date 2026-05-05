@@ -35,7 +35,9 @@
     ];
 @endphp
 
-<x-Layout>
+<x-Layout title="SureOwnCompany | Nos Services" image="{{ asset('assets/images/slider2.png') }}" description="Découvrez l'étendue de nos services conçus pour répondre aux défis les plus complexes de l'industrie
+                    énergétique."
+    keywords="transport carburant sécurisé,Services, logistique industrielle de pointe, livraison hydrocarbures B2B, flotte camions citernes, approvisionnement industriel traçable, expert logistique SureOwnCompany, transport matières critiques">
     <x-Services.Hero />
 
     <section class="py-24 bg-white overflow-hidden">
