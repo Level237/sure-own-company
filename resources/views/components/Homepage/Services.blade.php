@@ -40,7 +40,8 @@
 
         <!-- Services Grid -->
         <!-- Services Grid / Mobile Carousel -->
-        <div id="services-carousel" class="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 snap-x snap-mandatory scroll-smooth pb-12 md:pb-0 hide-scrollbar">
+        <div id="services-carousel"
+            class="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 snap-x snap-mandatory scroll-smooth pb-12 md:pb-0 hide-scrollbar">
             <!-- 1. Transport de carburant -->
             <div
                 class="flex-none w-[85vw] md:w-full snap-center group p-8 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 animate-on-scroll opacity-0 translate-y-10 delay-100 transition-all duration-1000">

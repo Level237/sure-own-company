@@ -1,24 +1,24 @@
 @props([
-    'headerWhite' => false, 
+    'headerWhite' => false,
     'isHomepage' => false,
     'title' => 'SureOwnCompany - Transport de Carburant & Logistique Industrielle',
     'description' => 'SureOwnCompany révolutionne le transport de carburant et la logistique industrielle. Flotte moderne, sécurité maximale et traçabilité pour les entreprises exigeantes.',
     'keywords' => 'transport de carburant, logistique industrielle, livraison sécurisée, flotte moderne, approvisionnement industriel',
-    'image' => asset('images/default-meta.jpg')
+    'image' => asset('assets/images/logo.png')
 ])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg+xml" href={{ asset('assets/images/logo.png') }} />
     <!-- Primary Meta Tags -->
     <title>{{ $title }}</title>
     <meta name="title" content="{{ $title }}">
     <meta name="description" content="{{ $description }}">
     <meta name="keywords" content="{{ $keywords }}">
-
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
