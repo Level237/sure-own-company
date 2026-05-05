@@ -1,66 +1,146 @@
-<div id="page-loader" class="fixed inset-0 z-[10000] flex items-center justify-center bg-white transition-all duration-700 ease-in-out">
-    <!-- Top Progress Bar -->
-    <div class="absolute top-0 left-0 h-1 bg-primary transition-all duration-1000 ease-out" id="loader-progress" style="width: 0%"></div>
+<div id="page-loader" class="fixed inset-0 z-[10000] flex flex-col items-center justify-center bg-slate-50 transition-all duration-1000 ease-[cubic-bezier(0.74,0,0.24,1)]">
     
-    <div class="relative flex flex-col items-center gap-6">
-        <!-- Animated Logo -->
-        <div class="relative w-24 h-24 md:w-32 md:h-32 animate-pulse-gentle">
-            <img src="{{ asset('assets/images/logo.png') }}" alt="Loading..." class="w-full h-full object-contain">
+    <!-- Subtle background pattern -->
+    <div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-50"></div>
+
+    <div class="relative z-10 flex flex-col items-center justify-center">
+        <!-- Logo container with 3D-like float and spinning rings -->
+        <div class="relative w-32 h-32 mb-10 animate-float flex items-center justify-center">
+            <!-- Glow effect behind -->
+            <div class="absolute inset-0 bg-primary/20 blur-2xl rounded-full animate-pulse-gentle"></div>
+            
+            <!-- Outer spinning ring -->
+            <div class="absolute inset-0 rounded-full border-t-2 border-r-2 border-primary border-b-transparent border-l-transparent animate-spin-slow"></div>
+            <!-- Inner spinning ring (reverse) -->
+            <div class="absolute inset-2 rounded-full border-b-2 border-l-2 border-black/80 border-t-transparent border-r-transparent animate-spin-reverse"></div>
+            
+            <!-- Center Logo -->
+            <div class="absolute inset-4 rounded-full bg-white shadow-2xl flex items-center justify-center overflow-hidden z-20 border border-gray-100">
+                <img src="{{ asset('assets/images/logo.png') }}" alt="Loading" class="w-16 h-16 object-contain animate-pulse-subtle">
+            </div>
         </div>
-        
-        <!-- Loading Text/Subtle Indicator -->
-        <div class="flex items-center gap-2">
-            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-bounce"></span>
-            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-bounce delay-150"></span>
-            <span class="w-1.5 h-1.5 rounded-full bg-primary animate-bounce delay-300"></span>
+
+        <!-- Typography / Loading text -->
+        <div class="flex flex-col items-center space-y-3">
+            <h2 class="text-sm font-bold text-gray-800 tracking-[0.3em] uppercase flex gap-[2px]">
+                <span class="animate-bounce-char" style="animation-delay: 0s">L</span>
+                <span class="animate-bounce-char" style="animation-delay: 0.1s">o</span>
+                <span class="animate-bounce-char" style="animation-delay: 0.2s">a</span>
+                <span class="animate-bounce-char" style="animation-delay: 0.3s">d</span>
+                <span class="animate-bounce-char" style="animation-delay: 0.4s">i</span>
+                <span class="animate-bounce-char" style="animation-delay: 0.5s">n</span>
+                <span class="animate-bounce-char" style="animation-delay: 0.6s">g</span>
+            </h2>
+            
+            <!-- Modern continuous progress line -->
+            <div class="w-40 h-[2px] bg-gray-200 overflow-hidden relative rounded-full">
+                <div class="absolute top-0 left-0 h-full bg-primary w-1/3 animate-progress-slide rounded-full"></div>
+            </div>
         </div>
     </div>
 </div>
 
 <style>
-    @keyframes pulse-gentle {
-        0%, 100% { transform: scale(1); opacity: 1; }
-        50% { transform: scale(1.05); opacity: 0.8; }
-    }
-    .animate-pulse-gentle {
-        animation: pulse-gentle 2s ease-in-out infinite;
+    /* Premium Animations */
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
     }
     
+    @keyframes spin-slow {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    @keyframes spin-reverse {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+    }
+    
+    @keyframes progress-slide {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(300%); }
+    }
+    
+    @keyframes pulse-subtle {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(0.92); }
+    }
+
+    @keyframes bounce-char {
+        0%, 100% { transform: translateY(0); opacity: 0.5; }
+        50% { transform: translateY(-4px); opacity: 1; }
+    }
+    
+    .animate-float {
+        animation: float 4s ease-in-out infinite;
+    }
+    
+    .animate-spin-slow {
+        animation: spin-slow 3s linear infinite;
+    }
+    
+    .animate-spin-reverse {
+        animation: spin-reverse 2.5s linear infinite;
+    }
+    
+    .animate-progress-slide {
+        animation: progress-slide 1.5s ease-in-out infinite;
+    }
+    
+    .animate-pulse-subtle {
+        animation: pulse-subtle 2.5s ease-in-out infinite;
+    }
+
+    .animate-pulse-gentle {
+        animation: pulse-subtle 3s ease-in-out infinite;
+    }
+
+    .animate-bounce-char {
+        animation: bounce-char 1.5s ease-in-out infinite;
+    }
+    
+    /* Reveal animation for loader exit: Smooth upward slide like a curtain */
     #page-loader.loader-hidden {
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(1.1);
+        transform: translateY(-100%);
+        border-bottom-left-radius: 50% 10%;
+        border-bottom-right-radius: 50% 10%;
+        opacity: 0.9;
     }
 </style>
 
 <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Prevent scrolling while loading
+        document.body.style.overflow = 'hidden';
+    });
+
     window.addEventListener('load', () => {
         const loader = document.getElementById('page-loader');
-        const progress = document.getElementById('loader-progress');
         
-        // Simulate progress for visual polish
-        if (progress) {
-            progress.style.width = '100%';
-        }
-        
-        // Small delay to ensure the 100% width is seen
+        // Ensure a minimum display time for the animation (e.g., 600ms) to avoid flashes
         setTimeout(() => {
             if (loader) {
                 loader.classList.add('loader-hidden');
+                document.body.style.overflow = ''; // Restore scrolling
                 
-                // Remove from DOM after transition to free up resources
+                // Remove from DOM after transition
                 setTimeout(() => {
                     loader.style.display = 'none';
-                }, 700);
+                }, 1000); // Wait for the translateY transition
             }
-        }, 500);
+        }, 600);
     });
 
-    // Fallback if load event takes too long
+    // Fallback if load event fails or takes forever
     setTimeout(() => {
         const loader = document.getElementById('page-loader');
         if (loader && !loader.classList.contains('loader-hidden')) {
             loader.classList.add('loader-hidden');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 1000);
         }
     }, 5000);
 </script>
