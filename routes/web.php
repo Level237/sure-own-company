@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PartnerController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -22,6 +23,6 @@ Route::get('/nos-services/{slug}', function ($slug) {
 Route::get('/contactez-nous', [ContactController::class, 'index']);
 Route::post('/contactez-nous', [ContactController::class, 'sendContact'])->name('contact.send');
 
-Route::get('/devenir-partenaire', function () {
-    return view('partner');
-});
+Route::get('/devenir-partenaire', [PartnerController::class, 'index']);
+Route::post('/devenir-partenaire', [PartnerController::class, 'sendPartnerRequest'])->name('partner.send');
+

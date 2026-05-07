@@ -26,11 +26,11 @@
 
                 <div
                     class="flex flex-col sm:flex-row max-sm:flex-row items-center justify-center gap-5 animate-content delay-400 w-full sm:w-auto">
-                    <a href="#services"
+                    <a href="nos-services"
                         class="w-full max-sm:w-full max-sm:text-sm sm:w-auto px-14 max-sm:px-4 py-4 rounded-full bg-primary hover:bg-primary-dark text-white font-bold text-lg transition-all hover:shadow-primary/40 flex items-center justify-center gap-2">
                         Nos Services
                     </a>
-                    <a href="#contact"
+                    <a href="contactez-nous"
                         class="w-full sm:w-auto max-sm:w-full max-sm:text-sm px-14 max-sm:px-4 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/10 hover:bg-white/20 text-white font-bold text-lg transition-all flex items-center justify-center gap-2">
                         Nous contacter
                     </a>
@@ -67,11 +67,11 @@
 
                 <div
                     class="flex flex-col sm:flex-row max-sm:flex-row items-center justify-center gap-5 animate-content delay-400 w-full sm:w-auto">
-                    <a href="#services"
+                    <a href="a-propos-de-nous"
                         class="w-full max-sm:w-full max-sm:text-sm sm:w-auto px-14 max-sm:px-4 py-4 rounded-full bg-primary hover:bg-primary-dark text-white font-bold text-lg transition-all hover:shadow-primary/40 flex items-center justify-center gap-2">
                         A propos de nous
                     </a>
-                    <a href="#solutions"
+                    <a href="devenir-partenaire"
                         class="w-full sm:w-auto max-sm:w-full max-sm:text-sm px-14 max-sm:px-4 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/10 hover:bg-white/20 text-white font-bold text-lg transition-all flex items-center justify-center gap-2">
                         Partenariat
                     </a>

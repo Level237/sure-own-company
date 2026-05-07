@@ -72,7 +72,16 @@
                 <!-- Form Card -->
                 <div
                     class="bg-white p-8 max-sm:p-0 md:p-16 rounded-[4rem] shadow-2xl shadow-slate-200 border border-slate-100 animate-on-scroll opacity-0 translate-y-10 delay-300">
-                    <form action="#" class="space-y-12">
+                    
+                    @if(session('success'))
+                        <div class="mb-8 p-6 bg-emerald-50 border border-emerald-100 rounded-3xl flex items-center gap-4 text-emerald-800 animate-on-scroll">
+                            <x-lucide-check-circle class="w-8 h-8 text-emerald-500" />
+                            <p class="font-bold">{{ session('success') }}</p>
+                        </div>
+                    @endif
+
+                    <form action="{{ route('partner.send') }}" method="POST" class="space-y-12">
+                        @csrf
 
                         <!-- Step 1: Company Info -->
                         <div class="space-y-8">
@@ -89,8 +98,11 @@
                                     <label class="text-slate-700 font-bold text-sm ml-1 uppercase tracking-wider">Raison
                                         Sociale</label>
                                     <div class="relative group">
-                                        <input type="text" placeholder="Ex: LogiCam SA"
-                                            class="w-full pl-14 pr-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-200 mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300 shadow-inner">
+                                        <input type="text" name="company_name" value="{{ old('company_name') }}" placeholder="Ex: LogiCam SA"
+                                            class="w-full pl-14 pr-6 py-5 rounded-2xl bg-slate-50 border-2 @error('company_name') border-red-300 @else border-slate-200 @enderror mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300 shadow-inner">
+                                        @error('company_name')
+                                            <p class="text-red-500 text-xs mt-1 ml-1 font-bold italic">{{ $message }}</p>
+                                        @enderror
                                         <x-lucide-building-2
                                             class="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-slate-300 group-focus-within:text-primary transition-colors" />
                                     </div>
@@ -100,13 +112,17 @@
                                         class="text-slate-700 font-bold text-sm ml-1 uppercase tracking-wider">Secteur
                                         d'activité</label>
                                     <div class="relative group">
-                                        <select
-                                            class="w-full pl-14 pr-12 py-5 rounded-2xl bg-slate-50 border-2 border-slate-200 mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium appearance-none shadow-inner">
-                                            <option>Transport & Logistique</option>
-                                            <option>Fourniture Industrielle</option>
-                                            <option>Maintenance & Services</option>
-                                            <option>Autre</option>
+                                        <select name="industry"
+                                            class="w-full pl-14 pr-12 py-5 rounded-2xl bg-slate-50 border-2 @error('industry') border-red-300 @else border-slate-200 @enderror mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium appearance-none shadow-inner">
+                                            <option value="">Sélectionnez un secteur</option>
+                                            <option value="Transport & Logistique" {{ old('industry') == 'Transport & Logistique' ? 'selected' : '' }}>Transport & Logistique</option>
+                                            <option value="Fourniture Industrielle" {{ old('industry') == 'Fourniture Industrielle' ? 'selected' : '' }}>Fourniture Industrielle</option>
+                                            <option value="Maintenance & Services" {{ old('industry') == 'Maintenance & Services' ? 'selected' : '' }}>Maintenance & Services</option>
+                                            <option value="Autre" {{ old('industry') == 'Autre' ? 'selected' : '' }}>Autre</option>
                                         </select>
+                                        @error('industry')
+                                            <p class="text-red-500 text-xs mt-1 ml-1 font-bold italic">{{ $message }}</p>
+                                        @enderror
                                         <x-lucide-layers
                                             class="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-slate-300 group-focus-within:text-primary transition-colors" />
                                         <x-lucide-chevron-down
@@ -131,8 +147,11 @@
                                     <label class="text-slate-700 font-bold text-sm ml-1 uppercase tracking-wider">Nom
                                         Complet</label>
                                     <div class="relative group">
-                                        <input type="text" placeholder="Ex: Marc Ndjoli"
-                                            class="w-full pl-14 pr-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-200 mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300 shadow-inner">
+                                        <input type="text" name="full_name" value="{{ old('full_name') }}" placeholder="Ex: Marc Ndjoli"
+                                            class="w-full pl-14 pr-6 py-5 rounded-2xl bg-slate-50 border-2 @error('full_name') border-red-300 @else border-slate-200 @enderror mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300 shadow-inner">
+                                        @error('full_name')
+                                            <p class="text-red-500 text-xs mt-1 ml-1 font-bold italic">{{ $message }}</p>
+                                        @enderror
                                         <x-lucide-user
                                             class="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-slate-300 group-focus-within:text-primary transition-colors" />
                                     </div>
@@ -144,8 +163,11 @@
                                             class="text-slate-700 font-bold text-sm ml-1 uppercase tracking-wider">Email
                                             Professionnel</label>
                                         <div class="relative group">
-                                            <input type="email" placeholder="contact@entreprise.com"
-                                                class="w-full pl-14 pr-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-200 mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300 shadow-inner">
+                                            <input type="email" name="email" value="{{ old('email') }}" placeholder="contact@entreprise.com"
+                                                class="w-full pl-14 pr-6 py-5 rounded-2xl bg-slate-50 border-2 @error('email') border-red-300 @else border-slate-200 @enderror mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300 shadow-inner">
+                                            @error('email')
+                                                <p class="text-red-500 text-xs mt-1 ml-1 font-bold italic">{{ $message }}</p>
+                                            @enderror
                                             <x-lucide-mail
                                                 class="absolute left-5 top-1/2 mt-2 -translate-y-1/2 w-6 h-6 text-slate-300 group-focus-within:text-primary transition-colors" />
                                         </div>
@@ -154,8 +176,11 @@
                                         <label
                                             class="text-slate-700 font-bold text-sm ml-1 uppercase tracking-wider">Téléphone</label>
                                         <div class="relative group">
-                                            <input type="tel" placeholder="Votre numéro de téléphone"
-                                                class="w-full pl-14 pr-6 py-5 rounded-2xl bg-slate-50 border-2 border-slate-200 mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300 shadow-inner">
+                                            <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="Votre numéro de téléphone"
+                                                class="w-full pl-14 pr-6 py-5 rounded-2xl bg-slate-50 border-2 @error('phone') border-red-300 @else border-slate-200 @enderror mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300 shadow-inner">
+                                            @error('phone')
+                                                <p class="text-red-500 text-xs mt-1 ml-1 font-bold italic">{{ $message }}</p>
+                                            @enderror
                                             <x-lucide-phone
                                                 class="absolute left-5 top-1/2 mt-2 -translate-y-1/2 w-6 h-6 text-slate-300 group-focus-within:text-primary transition-colors" />
                                         </div>
@@ -177,9 +202,12 @@
                             <div class="space-y-3">
                                 <label class="text-slate-700 font-bold text-sm ml-1 uppercase tracking-wider">Pourquoi
                                     nous rejoindre ?</label>
-                                <textarea rows="6"
+                                <textarea rows="6" name="message"
                                     placeholder="Dites-nous en quelques mots comment nous pourrions collaborer pour créer de la valeur..."
-                                    class="w-full px-8 py-6 mt-2 rounded-[2rem] bg-slate-50 border-2 border-slate-200 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium resize-none placeholder:text-slate-300 shadow-inner"></textarea>
+                                    class="w-full px-8 py-6 mt-2 rounded-[2rem] bg-slate-50 border-2 @error('message') border-red-300 @else border-slate-200 @enderror focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium resize-none placeholder:text-slate-300 shadow-inner">{{ old('message') }}</textarea>
+                                @error('message')
+                                    <p class="text-red-500 text-xs mt-1 ml-1 font-bold italic">{{ $message }}</p>
+                                @enderror
                             </div>
                         </div>
 
