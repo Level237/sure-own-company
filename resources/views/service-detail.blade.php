@@ -157,9 +157,9 @@
                             <h3 class="text-2xl font-bold mb-4">Besoin d'un devis ?</h3>
                             <p class="text-white/80 mb-6 text-sm">Nos experts sont à votre disposition pour étudier vos
                                 besoins et vous proposer une solution sur mesure.</p>
-                            <a href="/#contact"
+                            <a href="/passer-une-commande"
                                 class="inline-flex items-center justify-center w-full py-4 rounded-xl bg-white text-primary font-bold hover:bg-slate-900 hover:text-white transition-all">
-                                Nous contacter
+                                Demander un devis
                             </a>
                         </div>
                         <x-lucide-help-circle class="absolute -bottom-10 -right-10 w-40 h-40 text-white/10" />

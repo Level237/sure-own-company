@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\OrderRequestController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -25,4 +26,10 @@ Route::post('/contactez-nous', [ContactController::class, 'sendContact'])->name(
 
 Route::get('/devenir-partenaire', [PartnerController::class, 'index']);
 Route::post('/devenir-partenaire', [PartnerController::class, 'sendPartnerRequest'])->name('partner.send');
+
+Route::get('/passer-une-commande', [OrderRequestController::class, 'index'])->name('order.index');
+Route::post('/passer-une-commande', [OrderRequestController::class, 'store'])->name('order.store');
+Route::get('/commande-reussie', [OrderRequestController::class, 'success'])->name('order.success');
+
+
 

@@ -146,14 +146,14 @@
                         class="bg-white/5 backdrop-blur-sm p-10 md:p-16 rounded-[3rem] border border-white/10 text-center space-y-8 relative overflow-hidden group">
                         <div class="relative z-10 space-y-4">
                             <h3 class="text-3xl max-sm:text-2xl font-black">Prêt à démarrer ?</h3>
-                            <p class="text-white/60 max-sm:text-sm">Discutez de votre projet avec nos experts et obten
-                                ez une solution
-                                personnalisée dès aujourd'hui.</p>
+                            <p class="text-white/60 max-sm:text-sm">Discutez de votre projet avec nos experts et obtenez
+                                une solution
+                                personnalisée.</p>
                         </div>
                         <div class="relative z-10 pt-4">
-                            <a href="/#contact"
+                            <a href="/passer-une-commande"
                                 class="inline-flex max-sm:text-sm items-center justify-center px-10 py-5 rounded-2xl bg-primary text-white font-black text-lg hover:bg-white hover:text-primary transition-all duration-300 shadow-xl shadow-primary/20">
-                                Contactez-nous
+                                Demander un devis
                                 <x-lucide-arrow-right
                                     class="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
                             </a>

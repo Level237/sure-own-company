@@ -20,6 +20,7 @@
             <a href="/a-propos-de-nous" class="text-lg font-bold hover:text-primary transition-colors">A propos de
                 nous</a>
             <a href="/nos-services" class="text-lg font-bold hover:text-primary transition-colors">Nos services</a>
+
             <a href="/contactez-nous" class="text-lg font-bold hover:text-primary transition-colors">Contactez-nous</a>
 
         </nav>
@@ -47,6 +48,8 @@
             propos de nous</a>
         <a href="/nos-services" class="text-2xl font-semibold text-white hover:text-primary transition-colors">Nos
             services</a>
+        <a href="/passer-une-commande"
+            class="text-2xl font-semibold text-white hover:text-primary transition-colors">Passer une commande</a>
         <a href="/contactez-nous"
             class="text-2xl font-semibold text-white hover:text-primary transition-colors">Contactez-nous</a>
 
