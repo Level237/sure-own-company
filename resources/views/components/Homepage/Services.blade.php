@@ -22,7 +22,7 @@
                 </p>
             </div>
             <div class="flex flex-col items-start lg:items-end">
-                <a href="/services"
+                <a href="/nos-services"
                     class="group flex items-center gap-2 text-slate-900 font-bold text-lg hover:text-primary transition-colors duration-300">
                     <span class="relative">
                         Voir tous les services
@@ -54,7 +54,7 @@
                     Transport sécurisé de carburant à l’échelle nationale et internationale, avec respect strict des
                     normes et des délais.
                 </p>
-                <a href="/services/transport"
+                <a href="/nos-services/transport"
                     class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-900 font-bold group/btn hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300">
                     Explorer
                     <x-lucide-arrow-right class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -70,10 +70,10 @@
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-4">Logistique internationale</h3>
                 <p class="text-slate-600 mb-8 line-clamp-3">
-                    Gestion des livraisons vers la RCA, le Tchad et autres zones, avec un suivi fiable et une
-                    coordination efficace.
+                    Assurer le transport sécurisé de carburant à travers plusieurs zones stratégiques, avec une
+                    coordination rigoureuse et le respect des normes opérationnelles.
                 </p>
-                <a href="/services/logistique"
+                <a href="/nos-services/logistique"
                     class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-900 font-bold group/btn hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300">
                     Explorer
                     <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none"
@@ -96,7 +96,7 @@
                     Fourniture d’équipements, consommables et solutions adaptées aux besoins des entreprises et
                     chantiers.
                 </p>
-                <a href="/services/approvisionnement"
+                <a href="/nos-services/approvisionnement"
                     class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-900 font-bold group/btn hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300">
                     Explorer
                     <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none"
@@ -114,12 +114,12 @@
                     class="w-16 h-16 mb-8 flex items-center justify-center rounded-2xl bg-teal-50 text-teal-600 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
                     <x-lucide-hard-hat class="w-10 h-10" />
                 </div>
-                <h3 class="text-xl font-bold text-slate-900 mb-4">Équipements & sécurité (EPI)</h3>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Équipements de protection individuelle (EPI)</h3>
                 <p class="text-slate-600 mb-8 line-clamp-3">
                     Distribution de matériels de protection et produits professionnels pour garantir la sécurité et la
                     performance.
                 </p>
-                <a href="/services/securite"
+                <a href="/nos-services/securite"
                     class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-900 font-bold group/btn hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300">
                     Explorer
                     <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none"

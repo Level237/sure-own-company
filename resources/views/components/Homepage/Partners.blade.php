@@ -10,23 +10,23 @@
 
             <!-- Logo Grid -->
             <div
-                class="flex flex-wrap justify-center items-center max-sm:gap-5 gap-12 md:gap-24 lg:gap-32 animate-on-scroll opacity-0 translate-y-10 transition-all duration-1000 delay-200">
+                class="flex flex-wrap justify-center items-center max-sm:gap-5 gap-12 md:gap-24 lg:gap-32 animate-on-scroll translate-y-10 transition-all duration-1000 delay-200">
                 <!-- Partner 1 -->
                 <div class="group flex items-center justify-center">
                     <img src="{{ asset('assets/images/partner1.png') }}" alt="Partner 1"
-                        class="h-32 max-sm:h-16 md:h-32 w-auto grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110">
+                        class="h-32 max-sm:h-16 md:h-32 w-auto  transition-all duration-500 transform group-hover:scale-110">
                 </div>
 
                 <!-- Partner 2 -->
                 <div class="group flex items-center justify-center">
                     <img src="{{ asset('assets/images/partner2.png') }}" alt="Partner 2"
-                        class="h-32 max-sm:h-16 md:h-32 w-auto grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110">
+                        class="h-32 max-sm:h-16 md:h-32 w-auto  transition-all duration-500 transform group-hover:scale-110">
                 </div>
 
                 <!-- Partner 3 -->
                 <div class="group flex items-center justify-center">
                     <img src="{{ asset('assets/images/partner3.png') }}" alt="Partner 3"
-                        class="h-32 max-sm:h-16 md:h-32 w-auto grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110">
+                        class="h-32 max-sm:h-16 md:h-32 w-auto transition-all duration-500 transform group-hover:scale-110">
                 </div>
             </div>
         </div>

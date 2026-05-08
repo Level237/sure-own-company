@@ -3,14 +3,14 @@
         'transport' => [
             'title' => 'Transport de carburant',
             'category' => 'Énergie & Logistique',
-            'image' => 'assets/images/slider1.png',
+            'image' => 'assets/images/why-choose-us.png',
             'icon' => 'bus',
             'description' => 'SureOwnCompany assure le transport sécurisé d’hydrocarbures à l’échelle nationale et internationale. Nous disposons d’une flotte de camions-citernes de pointe, géo-localisés en temps réel.',
             'features' => [
                 'Sécurité Maximale' => 'Respect des normes ADR et protocoles de sécurité stricts.',
-                'Traçabilité' => 'Suivi GPS en temps réel de chaque cargaison.',
-                'Disponibilité' => 'Intervention 24/7 pour vos besoins urgents.',
-                'Flexibilité' => 'Capacité adaptée de 10 000 à 45 000 litres.'
+                'Traçabilité' => 'Suivi GPS en temps réel de chaque camion.',
+
+                'Flexibilité' => 'Capacité adaptée de 20 000 à 36 000 litres.'
             ],
             'process' => [
                 ['title' => 'Commande', 'desc' => 'Validation de votre demande et planification logistique.'],
@@ -19,33 +19,15 @@
                 ['title' => 'Livraison', 'desc' => 'Dépotage sécurisé et vérification de la qualité.']
             ]
         ],
-        'logistique' => [
-            'title' => 'Logistique internationale',
-            'category' => 'Transport Transfrontalier',
-            'image' => 'assets/images/slider2.png',
-            'icon' => 'globe',
-            'description' => 'Nous connectons vos marchés en Afrique Centrale, particulièrement vers la RCA et le Tchad. Notre expertise douanière garantit des passages fluides aux frontières.',
-            'features' => [
-                'Zone Afrique Centrale' => 'Expertise reconnue sur les corridors Douala-Bangui et Douala-N\'Djamena.',
-                'Dédouanement' => 'Gestion complète des formalités administratives.',
-                'Multimodal' => 'Solutions combinées pour une efficacité optimale.',
-                'Entreposage' => 'Espaces de stockage sécurisés en zones stratégiques.'
-            ],
-            'process' => [
-                ['title' => 'Analyse', 'desc' => 'Étude de l\'itinéraire et des contraintes douanières.'],
-                ['title' => 'Groupage', 'desc' => 'Optimisation du chargement pour réduire les coûts.'],
-                ['title' => 'Transit', 'desc' => 'Franchissement des frontières avec assistance dédiée.'],
-                ['title' => 'Arrivée', 'desc' => 'Distribution finale à destination sécurisée.']
-            ]
-        ],
+
         'approvisionnement' => [
             'title' => 'Approvisionnement industriel',
             'category' => 'Solutions de Chantier',
             'image' => 'assets/images/become-partener.png',
             'icon' => 'package-check',
-            'description' => 'Nous fournissons aux entreprises et aux chantiers les équipements et consommables nécessaires à leur bon fonctionnement, même dans les zones les plus reculées.',
+            'description' => 'Nous fournissons aux entreprises les équipements et consommables nécessaires à leur bon fonctionnement.',
             'features' => [
-                'Équipements' => 'Vente et location de matériel industriel certifié.',
+                'Équipements' => 'Fournitures  de matériel industriel.',
                 'Consommables' => 'Fourniture régulière de lubrifiants et pièces d\'usure.',
                 'Réactivité' => 'Livraison rapide directement sur votre site.',
                 'Qualité' => 'Produits issus des meilleurs fabricants mondiaux.'
@@ -101,7 +83,8 @@
                             <div
                                 class="p-8 rounded-3xl bg-slate-50 border border-slate-100 group hover:bg-primary transition-all duration-500">
                                 <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-white transition-colors">
-                                    {{ $title }}</h3>
+                                    {{ $title }}
+                                </h3>
                                 <p class="text-slate-600 group-hover:text-white/80 transition-colors leading-relaxed">
                                     {{ $desc }}
                                 </p>
@@ -113,30 +96,36 @@
                     <div class="space-y-12 pt-12">
                         <div class="text-center space-y-4">
                             <h2 class="text-3xl md:text-4xl font-black text-slate-900">Notre Processus</h2>
-                            <p class="text-slate-500 max-w-xl mx-auto">Une méthodologie rigoureuse pour garantir une qualité de service constante et une sécurité totale.</p>
+                            <p class="text-slate-500 max-w-xl mx-auto">Une méthodologie rigoureuse pour garantir une
+                                qualité de service constante et une sécurité totale.</p>
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
                             @foreach($service['process'] as $index => $step)
-                            <div class="group relative p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
-                                <!-- Step Number -->
-                                <div class="absolute -top-4 -right-4 text-8xl font-black text-slate-50 opacity-[0.03] group-hover:opacity-[0.08] group-hover:scale-110 transition-all duration-700 select-none">
-                                    0{{ $index + 1 }}
-                                </div>
-                                
-                                <div class="relative z-10 space-y-6">
-                                    <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center font-black text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-500">
-                                        {{ $index + 1 }}
+                                <div
+                                    class="group relative p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+                                    <!-- Step Number -->
+                                    <div
+                                        class="absolute -top-4 -right-4 text-8xl font-black text-slate-50 opacity-[0.03] group-hover:opacity-[0.08] group-hover:scale-110 transition-all duration-700 select-none">
+                                        0{{ $index + 1 }}
                                     </div>
-                                    <div class="space-y-2">
-                                        <h4 class="text-2xl font-bold text-slate-900">{{ $step['title'] }}</h4>
-                                        <p class="text-slate-600 leading-relaxed">{{ $step['desc'] }}</p>
+
+                                    <div class="relative z-10 space-y-6">
+                                        <div
+                                            class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center font-black text-xl group-hover:bg-primary group-hover:text-white transition-colors duration-500">
+                                            {{ $index + 1 }}
+                                        </div>
+                                        <div class="space-y-2">
+                                            <h4 class="text-2xl font-bold text-slate-900">{{ $step['title'] }}</h4>
+                                            <p class="text-slate-600 leading-relaxed">{{ $step['desc'] }}</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Decorative element -->
+                                    <div
+                                        class="absolute bottom-0 left-0 w-0 h-1.5 bg-primary group-hover:w-full transition-all duration-700">
                                     </div>
                                 </div>
-                                
-                                <!-- Decorative element -->
-                                <div class="absolute bottom-0 left-0 w-0 h-1.5 bg-primary group-hover:w-full transition-all duration-700"></div>
-                            </div>
                             @endforeach
                         </div>
                     </div>

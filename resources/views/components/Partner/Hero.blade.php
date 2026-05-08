@@ -9,10 +9,10 @@
 
     <!-- Content -->
     <div class="relative z-10 container mx-auto px-6 md:px-10 h-full flex flex-col justify-center max-w-7xl">
-        <div class="max-w-3xl space-y-8 max-sm:space-y-3">
+        <div class="max-w-3xl space-y-5 max-sm:space-y-3">
 
 
-            <h1 class="text-4xl md:text-7xl max-sm:text-3xl font-black text-white leading-tight animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl max-sm:text-3xl font-black text-white leading-tight animate-fade-in-up">
                 Bâtissons l'avenir <br> <span class="text-primary">ensemble</span>
             </h1>
 

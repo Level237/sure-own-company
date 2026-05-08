@@ -34,9 +34,9 @@
                         <x-lucide-shield-check class="w-10 h-10" />
                     </div>
                     <div class="space-y-2 order-2 lg:order-1">
-                        <h3 class="text-2xl font-bold text-slate-900">Sécurité des opérations</h3>
-                        <p class="text-slate-600 leading-relaxed">Respect strict des normes de transport et de
-                            manipulation du carburant.</p>
+                        <h3 class="text-2xl font-bold text-slate-900">Ecoute active</h3>
+                        <p class="text-slate-600 leading-relaxed">Comprendre vos besoins et vous accompagner par une
+                            approche sur mesure,et des solutions adaptées.</p>
                     </div>
                 </div>
 
@@ -51,9 +51,9 @@
                         </svg>
                     </div>
                     <div class="space-y-2 order-2 lg:order-1">
-                        <h3 class="text-2xl font-bold text-slate-900">Réactivité terrain</h3>
-                        <p class="text-slate-600 leading-relaxed">Intervention rapide et adaptation aux urgences
-                            opérationnelles.</p>
+                        <h3 class="text-2xl font-bold text-slate-900">Fiabilité et efficacité</h3>
+                        <p class="text-slate-600 leading-relaxed">Chaque besoin client est traité avec serieux et sens
+                            du résultat.</p>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,9 @@
                         </svg>
                     </div>
                     <div class="space-y-2">
-                        <h3 class="text-2xl font-bold text-slate-900">Fiabilité des livraisons</h3>
-                        <p class="text-slate-600 leading-relaxed">Délais respectés et suivi rigoureux de chaque mission.
+                        <h3 class="text-2xl font-bold text-slate-900">Engagement</h3>
+                        <p class="text-slate-600 leading-relaxed">Nous nous impliquons pleinement pour garantir le
+                            respect des exigences et des engagements pris.
                         </p>
                     </div>
                 </div>
@@ -104,9 +105,10 @@
                         </svg>
                     </div>
                     <div class="space-y-2">
-                        <h3 class="text-2xl font-bold text-slate-900">Engagement client</h3>
-                        <p class="text-slate-600 leading-relaxed">Une équipe à l’écoute, orientée résultats et
-                            satisfaction.</p>
+                        <h3 class="text-2xl font-bold text-slate-900">Réactivité terrain</h3>
+                        <p class="text-slate-600 leading-relaxed">Des interventions rapides et flexibles pour s’adapter
+                            à vos contraintes.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -116,7 +118,7 @@
         <!-- CTA Button -->
         <div
             class="mt-12  text-center animate-on-scroll opacity-0 translate-y-10 transition-all duration-1000 delay-500">
-            <a href="#contact"
+            <a href="/contactez-nous"
                 class="inline-flex hover:bg-white hover:text-primary items-center gap-3 px-10 py-5 rounded-full  text-white font-bold text-lg bg-primary transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 group">
                 Contactez-nous
                 <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none"

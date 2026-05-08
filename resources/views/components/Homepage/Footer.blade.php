@@ -1,6 +1,6 @@
 <footer class="bg-primary text-white pt-20 pb-10 overflow-hidden">
-    <div class="container mx-auto px-6 md:px-10 max-w-7xl">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+    <div class="container mx-auto px-6 md:px-10 max-w-8xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-2">
 
             <!-- Column 1: Brand & Social -->
             <div class="space-y-8">
@@ -8,8 +8,7 @@
                     <img src="{{ asset('assets/images/white-logo.png') }}" alt="SureOwn Logo" class="h-16 w-auto">
                 </a>
                 <p class="text-white/80 leading-relaxed text-lg">
-                    Votre partenaire de confiance en logistique et approvisionnement industriel au Cameroun et à
-                    l'international.
+                    Votre partenaire de solution sur mesure pour optimiser vos opérations.
                 </p>
                 <div class="flex items-center gap-4 pt-4">
                     <a href="#"
@@ -69,7 +68,7 @@
                             <a href="tel:+237670999916" class="text-lg font-bold hover:underline">+237 670999916</a>
                         </div>
                     </li>
-                    <li class="flex items-start gap-4">
+                    <li class="flex items-start gap-2">
                         <div class="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/10">
                             <x-lucide-mail class="w-5 h-5" />
                         </div>
@@ -105,7 +104,7 @@
                             <span
                                 class="block text-white/60 text-sm uppercase font-bold tracking-tight mb-1">Localisation</span>
                             <address class="not-italic text-sm font-bold uppercase">
-                                Ndogbong, Douala,<br>Cameroun
+                                Ndogbong, Douala,Cameroun
                             </address>
                         </div>
                     </li>
@@ -116,13 +115,12 @@
                         <div>
                             <span
                                 class="block text-white/60 text-sm uppercase font-bold tracking-tight mb-1">Horaires</span>
-                            <p class="text-white/90 text-sm font-medium mb-2 italic">
-                                Nous recevons <span
-                                    class="font-bold underline uppercase tracking-tighter text-white">uniquement sur
+                            <p class="text-white/90 text-sm font-medium mb-2 ">
+                                Nous recevons <span class="font-bold uppercase  ">uniquement sur
                                     rendez-vous</span>
                             </p>
-                            <span class="text-lg font-bold uppercase tracking-tighter italic">DU LUNDI AU VENDREDI : 9H
-                                - 15H</span>
+                            <span class="text-md font-bold ">Du Lundi au Vendredi : 9h
+                                - 15h</span>
                         </div>
                     </li>
                 </ul>

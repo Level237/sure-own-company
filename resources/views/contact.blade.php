@@ -85,36 +85,50 @@
                             <div class="space-y-2">
                                 <label for="first_name"
                                     class="block text-slate-800 font-bold text-sm ml-1 uppercase">Prénom</label>
-                                <input type="text" id="first_name" name="first_name" placeholder="Votre prénom"
+                                <input type="text" id="first_name" name="first_name" value="{{ old('first_name') }}" placeholder="Votre prénom"
                                     class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-300 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300">
                             </div>
                             <!-- Nom -->
                             <div class="space-y-2">
                                 <label for="last_name"
                                     class="block text-slate-800 font-bold text-sm ml-1 uppercase">Nom</label>
-                                <input type="text" id="last_name" name="last_name" placeholder="Votre nom"
+                                <input type="text" id="last_name" name="last_name" value="{{ old('last_name') }}" placeholder="Votre nom"
                                     class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-300 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300">
                             </div>
                             <!-- Email -->
                             <div class="space-y-2">
                                 <label for="email" class="block text-slate-800 font-bold text-sm ml-1 uppercase">Email
-                                    Professionnel</label>
-                                <input type="email" id="email" name="email" placeholder="Votre adresse email"
+                                </label>
+                                <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="Votre adresse email"
                                     class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-300 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300">
                             </div>
                             <!-- Téléphone -->
                             <div class="space-y-2">
                                 <label for="phone"
                                     class="block text-slate-800 font-bold text-sm ml-1 uppercase">Téléphone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone"
+                                <input type="tel" id="phone" name="phone" value="{{ old('phone') }}" placeholder="Votre numéro de téléphone"
+                                    class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-300 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300">
+                            </div>
+                            <!-- Entreprise -->
+                            <div class="space-y-2">
+                                <label for="company"
+                                    class="block text-slate-800 font-bold text-sm ml-1 uppercase">Entreprise</label>
+                                <input type="text" id="company" name="company" value="{{ old('company') }}" placeholder="Nom de votre société"
+                                    class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-300 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300">
+                            </div>
+                            <!-- Poste -->
+                            <div class="space-y-2">
+                                <label for="job_title"
+                                    class="block text-slate-800 font-bold text-sm ml-1 uppercase">Poste occupé</label>
+                                <input type="text" id="job_title" name="job_title" value="{{ old('job_title') }}" placeholder="Ex: Directeur Logistique"
                                     class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-300 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300">
                             </div>
                             <!-- Pays -->
                             <div class="md:col-span-2 space-y-2">
                                 <label for="country" class="block text-slate-800 font-bold text-sm ml-1 uppercase">Pays
                                     /
-                                    Région</label>
-                                <input type="text" id="country" name="country" placeholder="Votre pays de résidence"
+                                    Ville</label>
+                                <input type="text" id="country" name="country" value="{{ old('country') }}" placeholder="Votre pays de résidence"
                                     class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-300 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300">
                             </div>
                             <!-- Message -->
@@ -123,7 +137,7 @@
                                     class="block text-slate-800 font-bold text-sm ml-1 uppercase">Message</label>
                                 <textarea id="message" name="message" rows="5"
                                     placeholder="En quoi pouvons-nous vous aider ?"
-                                    class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-300 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 font-medium resize-none placeholder:text-slate-300"></textarea>
+                                    class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-300 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all outline-none text-slate-900 font-medium resize-none placeholder:text-slate-300">{{ old('message') }}</textarea>
                             </div>
 
                             <!-- Submit -->

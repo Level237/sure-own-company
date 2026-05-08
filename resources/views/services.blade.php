@@ -5,7 +5,7 @@
             'title' => 'Transport de carburant',
             'desc' => 'Transport sécurisé d’hydrocarbures à l’échelle nationale et internationale.',
             'icon' => 'bus',
-            'image' => 'assets/images/slider1.png',
+            'image' => 'assets/images/why-choose-us.png',
             'color' => 'indigo'
         ],
         [
@@ -13,7 +13,7 @@
             'title' => 'Logistique internationale',
             'desc' => 'Gestion des flux vers la RCA, le Tchad et autres zones enclavées.',
             'icon' => 'globe',
-            'image' => 'assets/images/slider2.png',
+            'image' => 'assets/images/slider1.png',
             'color' => 'blue'
         ],
         [
@@ -44,8 +44,9 @@
         <div class="container mx-auto px-6 md:px-10 max-w-7xl">
             <div class="text-center mb-20 space-y-4">
                 <h2 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight">
-                    Des solutions logistiques <br> <span
-                        class="text-primary underline decoration-primary/30 underline-offset-8">sans compromis</span>
+                    Des services adaptés à vos <br> <span
+                        class="text-primary underline decoration-primary/30 underline-offset-8">besoins opérationnels
+                    </span>
                 </h2>
                 <p class="text-slate-500 max-w-2xl mx-auto text-lg">
                     Découvrez l'étendue de nos services conçus pour répondre aux défis les plus complexes de l'industrie

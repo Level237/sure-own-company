@@ -7,7 +7,7 @@
                 <div class="space-y-4">
                     <span class="text-primary font-bold tracking-widest uppercase text-sm block">Qui sommes-nous</span>
                     <h2 class="text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">
-                        Un partenaire fiable pour vos besoins Logistiques
+                        Votre partenaire fiable pour vos besoins
                     </h2>
                 </div>
                 <div class="relative hidden max-sm:block z-10 rounded-3xl overflow-hidden shadow-2xl">
@@ -19,7 +19,7 @@
                         Nous accompagnons les entreprises avec des solutions logistiques sécurisées et efficaces,
                         adaptées aux réalités du terrain.
                         Notre mission : garantir la continuité de vos opérations grâce à un service fiable, réactif et
-                        sur mesure.
+                        sur mesure.Nous approvisionnons les entreprises de secteurs privés,public et parapublics.
                     </p>
 
                 </div>
@@ -35,8 +35,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <span class="font-bold text-sm text-slate-800">S&eacute;curit&eacute; des
-                            op&eacute;rations</span>
+                        <span class="font-bold text-sm text-slate-800">Ecoute active</span>
                     </div>
 
                     <div class="flex items-center gap-3 group">
@@ -47,7 +46,7 @@
                                     d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <span class="font-bold text-sm text-slate-800">Fiabilit&eacute; des livraisons</span>
+                        <span class="font-bold text-sm text-slate-800">Fiabilité et Efficacité</span>
                     </div>
 
                     <div class="flex items-center gap-3 group">
@@ -61,12 +60,12 @@
                                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                             </svg>
                         </div>
-                        <span class="font-bold text-sm text-slate-800">R&eacute;activit&eacute; terrain</span>
+                        <span class="font-bold text-sm text-slate-800">Engagement</span>
                     </div>
                 </div>
 
                 <div class="pt-8">
-                    <a href="#about-more"
+                    <a href="/a-propos-de-nous"
                         class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-slate-900 text-white font-bold hover:bg-primary transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 group">
                         En savoir plus
                         <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"

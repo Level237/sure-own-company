@@ -4,48 +4,7 @@
     keywords="transport carburant sécurisé,Partenaires, logistique industrielle de pointe, livraison hydrocarbures B2B, flotte camions citernes, approvisionnement industriel traçable, expert logistique SureOwnCompany, transport matières critiques">
     <x-Partner.Hero />
 
-    <!-- Benefits Section -->
-    <section class="py-24 bg-slate-50 overflow-hidden">
-        <div class="container mx-auto px-6 md:px-10 max-w-7xl">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                <!-- Benefit 1 -->
-                <div
-                    class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 group animate-on-scroll opacity-0 translate-y-10">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform">
-                        <x-lucide-shield-check class="w-8 h-8" />
-                    </div>
-                    <h3 class="text-2xl font-black text-slate-900 mb-4">Confiance Totale</h3>
-                    <p class="text-slate-500 leading-relaxed">Nous bâtissons des relations basées sur une intégrité
-                        absolue et une transparence opérationnelle complète.</p>
-                </div>
 
-                <!-- Benefit 2 -->
-                <div
-                    class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 group animate-on-scroll opacity-0 translate-y-10 delay-200">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform">
-                        <x-lucide-network class="w-8 h-8" />
-                    </div>
-                    <h3 class="text-2xl font-black text-slate-900 mb-4">Réseau Étendu</h3>
-                    <p class="text-slate-500 leading-relaxed">Accédez à notre vaste réseau logistique et profitez
-                        d'opportunités de croissance à l'échelle nationale.</p>
-                </div>
-
-                <!-- Benefit 3 -->
-                <div
-                    class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 group animate-on-scroll opacity-0 translate-y-10 delay-400">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform">
-                        <x-lucide-trending-up class="w-8 h-8" />
-                    </div>
-                    <h3 class="text-2xl font-black text-slate-900 mb-4">Excellence Durable</h3>
-                    <p class="text-slate-500 leading-relaxed">Un partenariat avec SureOwn, c'est l'assurance d'une
-                        performance constante et d'un succès partagé.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Main Content: Form & Why Us -->
     <section id="form" class="py-24 bg-white relative overflow-hidden">
@@ -219,10 +178,6 @@
                                 <x-lucide-rocket
                                     class="w-7 h-7 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                             </button>
-                            <div class="flex items-center gap-2 text-slate-400 font-medium text-sm italic">
-                                <x-lucide-clock class="w-4 h-4" />
-                                <span>Nous traitons les demandes sous 48h ouvrées</span>
-                            </div>
                         </div>
                     </form>
                 </div>

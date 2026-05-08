@@ -9,14 +9,16 @@
     </div>
 
     <!-- Content -->
-    <div class="relative z-10 container mx-auto px-6 md:px-10 h-full flex flex-col items-center justify-center text-center max-w-7xl">
+    <div
+        class="relative z-10 container mx-auto px-6 md:px-10 h-full flex flex-col items-center justify-center text-center max-w-7xl">
         <div class="space-y-6">
             <h1 class="text-4xl md:text-7xl font-extrabold text-white animate-fade-in-up">
-                Présentation
+                Qui sommes-nous?
             </h1>
             <div class="w-24 h-1.5 bg-white mx-auto rounded-full animate-width-grow"></div>
             <p class="text-white/90 text-lg md:text-xl max-w-2xl mx-auto animate-fade-in-up delay-200">
-                Découvrez l'histoire, la vision et l'engagement de SureOwnCompany dans le secteur de l'énergie et de la logistique.
+                Découvrez l’histoire, les valeurs et l’engagement de SureOwnCompany dans le transport de carburant et
+                l’approvisionnement industriel.
             </p>
         </div>
     </div>
@@ -28,6 +30,7 @@
             opacity: 0;
             transform: translateY(20px);
         }
+
         to {
             opacity: 1;
             transform: translateY(0);
@@ -38,6 +41,7 @@
         from {
             width: 0;
         }
+
         to {
             width: 6rem;
         }

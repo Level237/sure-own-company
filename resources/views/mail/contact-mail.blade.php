@@ -122,6 +122,20 @@
                     <span class="detail-value">{{ $data['phone'] }}</span>
                 </div>
                 @endif
+
+                @if(!empty($data['company']))
+                <div class="detail-item">
+                    <span class="detail-label">Entreprise</span>
+                    <span class="detail-value">{{ $data['company'] }}</span>
+                </div>
+                @endif
+
+                @if(!empty($data['job_title']))
+                <div class="detail-item">
+                    <span class="detail-label">Poste occupé</span>
+                    <span class="detail-value">{{ $data['job_title'] }}</span>
+                </div>
+                @endif
                 
                 @if(!empty($data['country']))
                 <div class="detail-item">

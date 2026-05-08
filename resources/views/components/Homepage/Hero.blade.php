@@ -14,7 +14,7 @@
             <div class="flex flex-col items-center space-y-8 slide-content">
                 <div class="animate-content">
                     <h1 class="text-3xl font-extrabold md:text-6xl lg:text-7xl text-white mb-0 md:mb-[-20px]">
-                        Votre partenaire sur mesure en &Eacute;nergie et Logistique
+                        Votre partenaire de solution sur mesure pour optimiser vos opérations.
                     </h1>
                 </div>
 
@@ -54,15 +54,15 @@
             <div class="flex flex-col items-center space-y-8 slide-content">
                 <div class="animate-content">
                     <h1 class="text-3xl font-extrabold md:text-6xl lg:text-7xl text-white mb-0 md:mb-[-20px]">
-                        Fiabilit&eacute;, s&eacute;curit&eacute; et r&eacute;activit&eacute; au cœur de vos
+                        Fiabilit&eacute; et Engagement au cœur de vos
                         op&eacute;rations
                     </h1>
                 </div>
 
                 <p
                     class="text-lg mt-6 max-sm:mt-1 max-sm:text-base md:text-xl text-white/70 max-w-2xl mx-auto animate-content delay-200">
-                    Nous assurons la livraison rapide de carburant et la fourniture d’&eacute;quipements industriels
-                    pour garantir la continuit&eacute; de vos activit&eacute;s.
+                    Nous répondrons avec efficacité et engagement à vos besoins en carburant et fourniture d'équipements
+                    industriels pour garantir la continuité de vos opérations.
                 </p>
 
                 <div

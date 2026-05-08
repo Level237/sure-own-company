@@ -13,7 +13,7 @@
                         Notre Histoire
                     </div>
                     <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
-                        Une expertise forgée au cœur de <span class="text-primary">l'énergie</span>
+                        Un engagement au service de vos besoins <span class="text-primary">logistiques</span>
                     </h2>
                     <p class="text-lg text-slate-600 leading-relaxed">
                         Fondée avec la vision de révolutionner le transport de carburant et la logistique industrielle,
@@ -64,8 +64,8 @@
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Notre Mission</h3>
                     <p class="text-slate-600 leading-relaxed">
-                        Assurer un approvisionnement énergétique fluide et sécurisé pour soutenir la croissance
-                        industrielle et économique de nos clients.
+                        Assurer un approvisionnement en énergie et équipements fluide et sécurisés pour soutenir la
+                        croissance industrielle et économique de nos clients
                     </p>
                 </div>
 
@@ -102,8 +102,8 @@
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Nos Valeurs</h3>
                     <p class="text-slate-600 leading-relaxed">
-                        Intégrité, Sécurité, Réactivité et Engagement envers l'excellence sont les piliers de chacune de
-                        nos actions.
+                        Ecoute active, fiabilité, éfficacité,engagement envers l'excellence sont les piliers de chacune
+                        de nos actions.
                     </p>
                 </div>
             </div>
@@ -111,7 +111,7 @@
     </section>
 
     <!-- Call to Action -->
-    <x-Homepage.BecomePartner />
+
 
     <x-Homepage.Footer />
 </x-Layout>
