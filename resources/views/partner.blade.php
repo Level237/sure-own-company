@@ -116,6 +116,19 @@
                                     </div>
                                 </div>
 
+                                <div class="space-y-3">
+                                    <label class="text-slate-700 font-bold text-sm ml-1 uppercase tracking-wider">Poste occupé</label>
+                                    <div class="relative group">
+                                        <input type="text" name="job_title" value="{{ old('job_title') }}" placeholder="Ex: Directeur Général"
+                                            class="w-full pl-14 pr-6 py-5 rounded-2xl bg-slate-50 border-2 @error('job_title') border-red-300 @else border-slate-200 @enderror mt-3 focus:border-primary focus:bg-white transition-all outline-none text-slate-900 font-medium placeholder:text-slate-300 shadow-inner">
+                                        @error('job_title')
+                                            <p class="text-red-500 text-xs mt-1 ml-1 font-bold italic">{{ $message }}</p>
+                                        @enderror
+                                        <x-lucide-briefcase
+                                            class="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-slate-300 group-focus-within:text-primary transition-colors" />
+                                    </div>
+                                </div>
+
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                                     <div class="space-y-3">
                                         <label

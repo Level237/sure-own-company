@@ -19,6 +19,7 @@ class PartnerController extends Controller
             'company_name' => 'required|string|max:255',
             'industry' => 'required|string|max:255',
             'full_name' => 'required|string|max:255',
+            'job_title' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:20',
             'message' => 'required|string',

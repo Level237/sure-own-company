@@ -31,6 +31,10 @@
                 <span class="value">{{ $data['full_name'] }}</span>
             </div>
             <div class="field">
+                <span class="label">Poste occupé:</span>
+                <span class="value">{{ $data['job_title'] }}</span>
+            </div>
+            <div class="field">
                 <span class="label">Email Professionnel:</span>
                 <span class="value">{{ $data['email'] }}</span>
             </div>
