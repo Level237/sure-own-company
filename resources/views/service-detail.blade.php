@@ -22,15 +22,15 @@
 
         'approvisionnement' => [
             'title' => 'Approvisionnement industriel',
-            'category' => 'Solutions de Chantier',
-            'image' => 'assets/images/become-partener.png',
+            'category' => 'Solutions d\'approvisionnement',
+            'image' => 'assets/images/img.png',
             'icon' => 'package-check',
             'description' => 'Nous fournissons aux entreprises les équipements et consommables nécessaires à leur bon fonctionnement.',
             'features' => [
                 'Équipements' => 'Fournitures  de matériel industriel.',
                 'Consommables' => 'Fourniture régulière de lubrifiants et pièces d\'usure.',
                 'Réactivité' => 'Livraison rapide directement sur votre site.',
-                'Qualité' => 'Produits issus des meilleurs fabricants mondiaux.'
+                'Qualité' => 'Produits adaptés à vos exigences.'
             ],
             'process' => [
                 ['title' => 'Besoin', 'desc' => 'Audit de vos besoins spécifiques en équipement.'],

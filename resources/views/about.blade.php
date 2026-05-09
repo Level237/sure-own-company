@@ -13,7 +13,7 @@
                         Notre Histoire
                     </div>
                     <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
-                        Un engagement au service de vos besoins <span class="text-primary">logistiques</span>
+                        Notre engagement au service de vos besoins <span class="text-primary">logistiques</span>
                     </h2>
                     <p class="text-lg text-slate-600 leading-relaxed">
                         Fondée avec la vision de révolutionner le transport de carburant et la logistique industrielle,
@@ -22,8 +22,8 @@
                         absolue.
                     </p>
                     <p class="text-lg text-slate-600 leading-relaxed">
-                        Depuis nos débuts, nous avons investi dans une flotte moderne et des technologies de pointe pour
-                        garantir une sécurité maximale et une traçabilité totale à chaque étape de l'approvisionnement.
+                        Grâce à notre flotte moderne et des technologies de pointe, nous vous garantissons une sécurité
+                        maximale et une traçabilité totale à chaque étape de l’approvisionnement .
                     </p>
 
                 </div>
@@ -37,6 +37,50 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Slogan Section -->
+    <section class="relative py-32 overflow-hidden bg-slate-900">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="{{ asset('assets/images/why-choose-us.png') }}" alt="Slogan Background"
+                class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/60 to-slate-900/80"></div>
+        </div>
+
+        <div class="container mx-auto px-6 md:px-10 max-w-7xl relative z-10 text-center">
+            <div class="space-y-8 animate-on-scroll  translate-y-10 transition-all duration-1000">
+                <div class="space-y-4">
+                    <span
+                        class="inline-block px-6 py-2 bg-primary/20 text-primary border border-primary/30 rounded-full font-bold text-xs uppercase tracking-[0.3em]">
+                        Notre Slogan
+                    </span>
+                    <h2 class="text-4xl md:text-7xl font-black leading-tight text-white">
+                        Votre <span class="text-primary ">Confiance</span>, <br class="md:hidden">
+                        Notre <span class="text-primary ">Engagement</span>
+                    </h2>
+                    <div class="w-24 h-1 bg-white/20 mx-auto rounded-full"></div>
+                </div>
+
+                <p class="text-white/70 text-lg md:text-2xl max-w-3xl mx-auto font-medium leading-relaxed">
+                    Une promesse de fiabilité, de sécurité et d'excellence opérationnelle <br class="hidden md:block">
+                    pour chacun de vos projets logistiques.
+                </p>
+
+                <div class="pt-10">
+                    <a href="/passer-une-commande"
+                        class="inline-flex items-center gap-4 px-10 py-5 rounded-2xl bg-primary text-white font-black text-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-all duration-500 shadow-2xl shadow-primary/20 group">
+                        Demander un devis
+                        <x-lucide-arrow-right class="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative elements -->
+        <div class="absolute top-0 left-1/4 w-64 h-64 bg-primary/20 rounded-full blur-[120px] -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[150px] translate-y-1/2">
         </div>
     </section>
 
@@ -84,8 +128,8 @@
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Notre Vision</h3>
                     <p class="text-slate-600 leading-relaxed">
-                        Devenir le leader incontesté de la logistique énergétique en Afrique, reconnu pour son
-                        innovation et son intégrité.
+                        Devenir une référence de sérieux, d’efficacité et de constance dans l'exécution de nos
+                        opérations.
                     </p>
                 </div>
 

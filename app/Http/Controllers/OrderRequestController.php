@@ -34,9 +34,6 @@ class OrderRequestController extends Controller
                 'email' => 'required|email|max:255',
                 'phone' => 'required|string|max:20',
                 'type_of_request' => 'required|string',
-                'product_type' => 'required|string',
-                'destination' => 'required|string',
-                'quantity' => 'required|string',
                 'desired_date' => 'required|date',
                 'message' => 'nullable|string',
             ]);

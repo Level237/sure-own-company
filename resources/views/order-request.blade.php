@@ -142,6 +142,9 @@
                                         <option value="Logistique Internationale">Logistique Internationale</option>
                                         <option value="Approvisionnement Industriel">Approvisionnement Industriel
                                         </option>
+                                        <option value="Produits d'entretien">Produits d'entretien</option>
+                                        <option value="Fournitures de consommables">Fournitures de consommables</option>
+                                        <option value="Autres">Autres</option>
                                     </select>
                                 </div>
 
@@ -171,7 +174,7 @@
 
                             <div id="section-new"
                                 class="hidden animate-fade-in space-y-10 pt-6 border-t border-slate-100">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                                <div class="grid grid-cols-1 md:grid-cols-1 gap-10">
                                     <div class="space-y-3">
                                         <label class="text-slate-900 font-bold  text-sm ml-1 uppercase ">Type
                                             de demande</label>
@@ -179,24 +182,7 @@
                                             placeholder="Ex: Devis, Consultation..."
                                             class="w-full px-6 py-4 mt-4 rounded-xl bg-slate-50 border-2 border-slate-200 focus:bg-white focus:border-primary transition-all outline-none text-slate-900 font-bold">
                                     </div>
-                                    <div class="space-y-3">
-                                        <label class="text-slate-900 font-bold  text-sm ml-1 uppercase ">Produit
-                                            / Carburant</label>
-                                        <input type="text" name="product_type" placeholder="Ex: Gasoil"
-                                            class="w-full px-6 py-4 mt-4 rounded-xl bg-slate-50 border-2 border-slate-200 focus:bg-white focus:border-primary transition-all outline-none text-slate-900 font-bold">
-                                    </div>
-                                    <div class="space-y-3">
-                                        <label
-                                            class="text-slate-900 font-bold  text-sm ml-1 uppercase ">Destination</label>
-                                        <input type="text" name="destination" placeholder="Lieu de livraison"
-                                            class="w-full px-6 py-4 mt-4 rounded-xl bg-slate-50 border-2 border-slate-200 focus:bg-white focus:border-primary transition-all outline-none text-slate-900 font-bold">
-                                    </div>
-                                    <div class="space-y-3">
-                                        <label class="text-slate-900 font-bold  text-sm ml-1 uppercase ">Quantité
-                                            estimée</label>
-                                        <input type="text" name="quantity" placeholder="Ex: 15 000L"
-                                            class="w-full px-6 py-4 rounded-xl mt-4 bg-slate-50 border-2 border-slate-200 focus:bg-white focus:border-primary transition-all outline-none text-slate-900 font-bold">
-                                    </div>
+
                                     <div class="md:col-span-2 space-y-3">
                                         <label class="text-slate-900 font-bold  text-sm ml-1 uppercase ">Date
                                             souhaitée</label>

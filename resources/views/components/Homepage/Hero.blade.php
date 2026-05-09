@@ -61,7 +61,7 @@
 
                 <p
                     class="text-lg mt-6 max-sm:mt-1 max-sm:text-base md:text-xl text-white/70 max-w-2xl mx-auto animate-content delay-200">
-                    Nous répondrons avec efficacité et engagement à vos besoins en carburant et fourniture d'équipements
+                    Nous répondons avec efficacité et engagement à vos besoins en carburant et fourniture d'équipements
                     industriels pour garantir la continuité de vos opérations.
                 </p>
 

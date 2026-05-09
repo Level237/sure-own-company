@@ -13,7 +13,18 @@
             </p>
         </div>
     </div>
-
+    <div
+        class="container mx-auto px-6 text-center mt-16 animate-on-scroll opacity-0 translate-y-10 transition-all duration-1000 delay-500">
+        <a href="/devenir-partenaire"
+            class="inline-flex items-center gap-3 max-sm:px-6  max-sm:py-3  px-12 py-5 rounded-full bg-primary text-white font-bold max-sm:text-sm text-lg hover:bg-slate-900 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 group">
+            Devenir partenaire
+            <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                </path>
+            </svg>
+        </a>
+    </div>
     <!-- Infinite Scroll Gallery -->
     <div
         class="relative w-full overflow-hidden py-10 group/gallery animate-on-scroll opacity-0 translate-y-10 transition-all duration-1000 delay-300">
@@ -57,18 +68,7 @@
     </div>
 
     <!-- CTA Section -->
-    <div
-        class="container mx-auto px-6 text-center mt-16 animate-on-scroll opacity-0 translate-y-10 transition-all duration-1000 delay-500">
-        <a href="/devenir-partenaire"
-            class="inline-flex items-center gap-3 max-sm:px-6  max-sm:py-3  px-12 py-5 rounded-full bg-primary text-white font-bold max-sm:text-sm text-lg hover:bg-slate-900 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20 group">
-            Devenir partenaire
-            <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
-                </path>
-            </svg>
-        </a>
-    </div>
+
 
     <style>
         @keyframes infiniteScroll {

@@ -1,19 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; margin: 0; padding: 0; }
-        .container { max-width: 600px; margin: 20px auto; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .header { background: #0f172a; color: #fff; padding: 30px; text-align: center; }
-        .header h1 { margin: 0; font-size: 24px; text-transform: uppercase; letter-spacing: 1px; }
-        .content { padding: 30px; }
-        .section-title { font-size: 18px; font-weight: bold; color: #0f172a; border-bottom: 2px solid #f97316; padding-bottom: 5px; margin-bottom: 20px; }
-        .field { margin-bottom: 15px; }
-        .label { font-weight: bold; color: #64748b; font-size: 12px; text-transform: uppercase; display: block; }
-        .value { color: #1e293b; font-size: 16px; font-weight: 500; }
-        .footer { background: #f8fafc; padding: 20px; text-align: center; font-size: 12px; color: #64748b; border-top: 1px solid #e2e8f0; }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: #0f172a;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0f172a;
+            border-bottom: 2px solid #f97316;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .field {
+            margin-bottom: 15px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #64748b;
+            font-size: 12px;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .value {
+            color: #1e293b;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .footer {
+            background: #f8fafc;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -56,18 +119,8 @@
                     <span class="label">Type de demande</span>
                     <span class="value">{{ $data['type_of_request'] }}</span>
                 </div>
-                <div class="field">
-                    <span class="label">Produit / Carburant</span>
-                    <span class="value">{{ $data['product_type'] }}</span>
-                </div>
-                <div class="field">
-                    <span class="label">Destination</span>
-                    <span class="value">{{ $data['destination'] }}</span>
-                </div>
-                <div class="field">
-                    <span class="label">Quantité</span>
-                    <span class="value">{{ $data['quantity'] }}</span>
-                </div>
+
+
                 <div class="field">
                     <span class="label">Date souhaitée</span>
                     <span class="value">{{ $data['desired_date'] }}</span>
@@ -92,4 +145,5 @@
         </div>
     </div>
 </body>
+
 </html>

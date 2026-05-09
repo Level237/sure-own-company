@@ -5,7 +5,7 @@
             <!-- Left: Text Content -->
             <div class="space-y-8 animate-on-scroll opacity-0 translate-x-[-50px] transition-all duration-1000">
                 <div class="space-y-4">
-                    <span class="text-primary font-bold tracking-widest uppercase text-sm block">Qui sommes-nous</span>
+                    <span class="text-primary font-bold tracking-widest uppercase text-lg block">Qui sommes-nous</span>
                     <h2 class="text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">
                         Votre partenaire fiable pour vos besoins
                     </h2>
@@ -17,7 +17,7 @@
                 <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
                     <p>
                         Nous accompagnons les entreprises avec des solutions logistiques sécurisées et efficaces,
-                        adaptées aux réalités du terrain.
+                        adaptées à vos exigences et aux réalités du terrain.
                         Notre mission : garantir la continuité de vos opérations grâce à un service fiable, réactif et
                         sur mesure.Nous approvisionnons les entreprises de secteurs privés,public et parapublics.
                     </p>
@@ -25,10 +25,10 @@
                 </div>
 
                 <!-- Key Points -->
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
-                    <div class="flex items-center gap-3 group">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-7 pt-4">
+                    <div class="flex items-center gap-2 group">
                         <div
-                            class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            class="w-6 h-6 flex items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
@@ -38,20 +38,20 @@
                         <span class="font-bold text-sm text-slate-800">Ecoute active</span>
                     </div>
 
-                    <div class="flex items-center gap-3 group">
+                    <div class="flex items-center gap-2 group">
                         <div
-                            class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            class="w-6 h-6 flex items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <span class="font-bold text-sm text-slate-800">Fiabilité et Efficacité</span>
+                        <span class="font-bold text-xs text-slate-800">Fiabilité et Efficacité</span>
                     </div>
 
                     <div class="flex items-center gap-3 group">
                         <div
-                            class="w-10 h-10 flex items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                            class="w-6 h-6 flex items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">

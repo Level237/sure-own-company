@@ -24,6 +24,7 @@ class ContactController extends Controller
             'company' => 'nullable|string|max:255',
             'job_title' => 'nullable|string|max:255',
             'country' => 'nullable|string|max:255',
+            'town' => 'nullable|string|max:255',
             'message' => 'required|string',
         ]);
 

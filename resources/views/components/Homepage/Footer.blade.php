@@ -65,7 +65,8 @@
                         <div>
                             <span
                                 class="block text-white/60 text-sm uppercase font-bold tracking-tight mb-1">T&eacute;l&eacute;phone</span>
-                            <a href="tel:+237670999916" class="text-lg font-bold hover:underline">+237 670999916</a>
+                            <a target="_blank" href="https://api.whatsapp.com/send/?phone=237670999916"
+                                class="text-lg font-bold hover:underline">+237 670999916</a>
                         </div>
                     </li>
                     <li class="flex items-start gap-2">
@@ -76,7 +77,7 @@
                             <span
                                 class="block text-white/60 text-sm uppercase font-bold tracking-tight mb-1">Email</span>
                             <a href="mailto:DIRECTION@SUREOWNCOMPANY.COM"
-                                class="text-sm font-bold hover:underline break-all uppercase">DIRECTION@SUREOWNCOMPANY.COM</a>
+                                class="text-sm font-bold hover:underline break-all">direction@sureowncompany.com</a>
                         </div>
                     </li>
                     <li class="flex items-start gap-4">

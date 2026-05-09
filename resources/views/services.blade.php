@@ -19,9 +19,9 @@
         [
             'slug' => 'approvisionnement',
             'title' => 'Approvisionnement industriel',
-            'desc' => 'Fourniture d’équipements et consommables pour chantiers et usines.',
+            'desc' => 'Fourniture  et consommables pour vos opérations.',
             'icon' => 'package-check',
-            'image' => 'assets/images/become-partener.png',
+            'image' => 'assets/images/img.png',
             'color' => 'orange'
         ],
         [
@@ -45,7 +45,7 @@
             <div class="text-center mb-20 space-y-4">
                 <h2 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight">
                     Des services adaptés à vos <br> <span
-                        class="text-primary underline decoration-primary/30 underline-offset-8">besoins opérationnels
+                        class="text-primary underline decoration-primary/30 underline-offset-8">attentes opérationnelle
                     </span>
                 </h2>
                 <p class="text-slate-500 max-w-2xl mx-auto text-lg">
