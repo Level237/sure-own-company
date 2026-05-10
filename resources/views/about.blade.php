@@ -1,3 +1,4 @@
+@section('canonical', 'https://sureowncompany.com/a-propos-de-nous')
 <x-Layout title="SureOwnCompany | A propos de nous" image="{{ asset('assets/images/about1.png') }}" description="Fondée avec la vision de révolutionner le transport de carburant et la logistique industrielle,
                         SureOwnCompany s'est imposée comme un partenaire de confiance pour les entreprises exigeantes."
     keywords="transport carburant sécurisé,A propos de nous, logistique industrielle de pointe, livraison hydrocarbures B2B, flotte camions citernes, approvisionnement industriel traçable, expert logistique SureOwnCompany, transport matières critiques">
@@ -40,49 +41,49 @@
         </div>
     </section>
 
-    <!-- Slogan Section -->
-    <section class="relative py-32 overflow-hidden bg-slate-900">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="{{ asset('assets/images/why-choose-us.png') }}" alt="Slogan Background"
-                class="w-full h-full object-cover opacity-30">
-            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/60 to-slate-900/80"></div>
-        </div>
-
-        <div class="container mx-auto px-6 md:px-10 max-w-7xl relative z-10 text-center">
-            <div class="space-y-8 animate-on-scroll  translate-y-10 transition-all duration-1000">
-                <div class="space-y-4">
-                    <span
-                        class="inline-block px-6 py-2 bg-primary/20 text-primary border border-primary/30 rounded-full font-bold text-xs uppercase tracking-[0.3em]">
-                        Notre Slogan
+    <!-- Dynamic Slogan Section -->
+    <section class="py-20 bg-transparent overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <div class="inline-block">
+                <h2 class="text-3xl md:text-6xl font-black text-slate-300 tracking-tighter">
+                    <span class="text-primary italic">"</span>
+                    <span id="typewriter" class="relative">
+                        <!-- The text will be typed here -->
                     </span>
-                    <h2 class="text-4xl md:text-7xl font-black leading-tight text-white">
-                        Votre <span class="text-primary ">Confiance</span>, <br class="md:hidden">
-                        Notre <span class="text-primary ">Engagement</span>
-                    </h2>
-                    <div class="w-24 h-1 bg-white/20 mx-auto rounded-full"></div>
-                </div>
-
-                <p class="text-white/70 text-lg md:text-2xl max-w-3xl mx-auto font-medium leading-relaxed">
-                    Une promesse de fiabilité, de sécurité et d'excellence opérationnelle <br class="hidden md:block">
-                    pour chacun de vos projets logistiques.
-                </p>
-
-                <div class="pt-10">
-                    <a href="/passer-une-commande"
-                        class="inline-flex items-center gap-4 px-10 py-5 rounded-2xl bg-primary text-white font-black text-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-all duration-500 shadow-2xl shadow-primary/20 group">
-                        Demander un devis
-                        <x-lucide-arrow-right class="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                    </a>
-                </div>
+                    <span class="text-primary italic">"</span>
+                </h2>
+                <div class="w-24 h-1.5 bg-primary mx-auto mt-6 rounded-full opacity-50"></div>
             </div>
         </div>
-
-        <!-- Decorative elements -->
-        <div class="absolute top-0 left-1/4 w-64 h-64 bg-primary/20 rounded-full blur-[120px] -translate-y-1/2"></div>
-        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[150px] translate-y-1/2">
-        </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const text = "Votre Confiance, Notre Engagement";
+            const element = document.getElementById('typewriter');
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    element.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 100);
+                }
+            }
+
+            // Start animation when section is in view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        type();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(element);
+        });
+    </script>
 
     <!-- Mission & Vision -->
     <section class="py-24 bg-slate-50">
@@ -154,7 +155,7 @@
         </div>
     </section>
 
-    <!-- Call to Action -->
+
 
 
     <x-Homepage.Footer />

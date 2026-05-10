@@ -1,3 +1,5 @@
+@section('canonical', 'https://sureowncompany.com/nos-services')
+
 @php
     $services = [
         'transport' => [
@@ -24,6 +26,7 @@
             'title' => 'Approvisionnement industriel',
             'category' => 'Solutions d\'approvisionnement',
             'image' => 'assets/images/img.png',
+
             'icon' => 'package-check',
             'description' => 'Nous fournissons aux entreprises les équipements et consommables nécessaires à leur bon fonctionnement.',
             'features' => [

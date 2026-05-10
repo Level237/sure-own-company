@@ -1,3 +1,5 @@
+@section('canonical', 'https://sureowncompany.com/nos-services')
+
 @php
     $services = [
         [

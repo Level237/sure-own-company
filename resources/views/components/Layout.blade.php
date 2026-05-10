@@ -7,7 +7,7 @@
     'image' => asset('assets/images/logo.png')
 ])
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
+<html lang="fr" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8">
@@ -36,12 +36,15 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link rel="canonical" href="@yield('canonical', request()->url())" />
+<link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playball&display=swap"
         rel="stylesheet">
 
     <!-- Vite -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        
 </head>
 
 <body class="bg-black text-white font-sans selection:bg-primary selection:text-white">
@@ -53,6 +56,7 @@
     </main>
 
     <x-ScrollTop />
+
 </body>
 
 </html>

@@ -48,7 +48,7 @@
                 @foreach(array_merge($images, $images) as $image)
                     <div
                         class="flex-none w-[300px] md:w-[450px] aspect-[16/10] rounded-3xl overflow-hidden shadow-lg border-4 border-slate-50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:border-primary/20">
-                        <img src="{{ asset($image) }}" alt="SureOwn Presentation"
+                        <img src="{{ asset($image) }}" alt="SureOwn Presentation {{ $image }}"
                             class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500">
                     </div>
                 @endforeach

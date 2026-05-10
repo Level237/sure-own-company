@@ -1,3 +1,4 @@
+@section('canonical', 'https://sureowncompany.com/devenir-partenaire')
 <x-Layout title="SureOwnCompany | Devenir partenaire" image="{{ asset('assets/images/become-partener.png') }}"
     description="Découvrez l'étendue de nos services conçus pour répondre aux défis les plus complexes de l'industrie
                     énergétique."

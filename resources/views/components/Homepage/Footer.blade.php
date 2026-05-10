@@ -65,8 +65,9 @@
                         <div>
                             <span
                                 class="block text-white/60 text-sm uppercase font-bold tracking-tight mb-1">T&eacute;l&eacute;phone</span>
-                            <a target="_blank" href="https://api.whatsapp.com/send/?phone=237670999916"
-                                class="text-lg font-bold hover:underline">+237 670999916</a>
+                            <a href="https://api.whatsapp.com/send/?phone=237670999916"
+                                class="text-lg font-bold hover:underline" target="_blank" rel="noopener noreferrer">+237
+                                670999916</a>
                         </div>
                     </li>
                     <li class="flex items-start gap-2">

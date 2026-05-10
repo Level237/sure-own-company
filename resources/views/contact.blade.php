@@ -1,3 +1,4 @@
+@section('canonical', 'https://sureowncompany.com/contactez-nous')
 <x-Layout title="SureOwnCompany | Contactez-nous" image="{{ asset('assets/images/slider2.png') }}" description="Découvrez l'étendue de nos services conçus pour répondre aux défis les plus complexes de l'industrie
                     énergétique."
     keywords="transport carburant sécurisé,Services, logistique industrielle de pointe, livraison hydrocarbures B2B, flotte camions citernes, approvisionnement industriel traçable, expert logistique SureOwnCompany, transport matières critiques">
