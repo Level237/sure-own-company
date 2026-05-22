@@ -3,35 +3,35 @@
 @php
     $services = [
         [
-            'slug' => 'transport',
-            'title' => 'Transport de carburant',
+            'slug' => 'transport-et-logistiques-des-hydrocarbures',
+            'title' => 'Transport & Logistique des hydrocarbures',
             'desc' => 'Transport sécurisé d’hydrocarbures à l’échelle nationale et internationale.',
             'icon' => 'bus',
             'image' => 'assets/images/why-choose-us.png',
             'color' => 'indigo'
         ],
         [
-            'slug' => 'logistique',
-            'title' => 'Logistique internationale',
-            'desc' => 'Gestion des flux vers la RCA, le Tchad et autres zones enclavées.',
+            'slug' => 'fourniture-et-approvisionnement-general',
+            'title' => 'Fourniture & Approvisionnement Général',
+            'desc' => 'Nous accompagnons les entreprises dans la fourniture de matériels et consommables nécessaires à leur fonctionnement quotidien.',
             'icon' => 'globe',
             'image' => 'assets/images/slider1.png',
             'color' => 'blue'
         ],
         [
-            'slug' => 'approvisionnement',
-            'title' => 'Approvisionnement industriel',
-            'desc' => 'Fourniture  et consommables pour vos opérations.',
+            'slug' => 'equipements-de-protection-et-securite',
+            'title' => 'Équipements de Protection & Sécurité',
+            'desc' => 'Sure Own Company fournit des équipements de protection individuelle adaptés aux environnements industriels',
             'icon' => 'package-check',
-            'image' => 'assets/images/img.png',
+            'image' => 'assets/images/security.jpg',
             'color' => 'orange'
         ],
         [
-            'slug' => 'securite',
-            'title' => 'Équipements & sécurité (EPI)',
-            'desc' => 'Distribution de matériels de protection individuelle conformes aux normes.',
+            'slug' => 'fourniture-industrielle-et-piece-technique',
+            'title' => 'Fourniture Industrielle & Pièces Techniques',
+            'desc' => 'Nous proposons des solutions d’approvisionnement en pièces et équipements industriels.',
             'icon' => 'hard-hat',
-            'image' => 'assets/images/why-choose-us.png',
+            'image' => 'assets/images/industrie.jpg',
             'color' => 'teal'
         ]
     ];
