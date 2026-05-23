@@ -82,7 +82,7 @@
                     Transport sécurisé de carburant à l’échelle nationale et internationale, avec respect strict des
                     normes et des délais.
                 </p>
-                <a href="/nos-services/transport"
+                <a href="/nos-services/transport-et-logistiques-des-hydrocarbures"
                     class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-900 font-bold group/btn hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300">
                     Explorer
                     <x-lucide-arrow-right class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -143,7 +143,7 @@
                     Assurer le transport sécurisé en approvisionnement à travers plusieurs zones stratégiques, avec une
                     coordination rigoureuse et le respect des normes opérationnelles.
                 </p>
-                <a href="/nos-services/logistique"
+                <a href="/nos-services/fourniture-et-approvisionnement-general"
                     class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-900 font-bold group/btn hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300">
                     Explorer
                     <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none"
@@ -166,7 +166,7 @@
                     Fourniture d’équipements, consommables et solutions adaptées aux besoins des entreprises et
                     chantiers.
                 </p>
-                <a href="/nos-services/approvisionnement"
+                <a href="/nos-services/equipements-de-protection-et-securite"
                     class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-900 font-bold group/btn hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300">
                     Explorer
                     <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none"
@@ -203,7 +203,7 @@
                     Distribution de matériels de protection et produits professionnels pour garantir la sécurité et la
                     performance.
                 </p>
-                <a href="/nos-services/securite"
+                <a href="/nos-services/fourniture-industrielle-et-piece-technique"
                     class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-900 font-bold group/btn hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300">
                     Explorer
                     <svg class="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" fill="none"
