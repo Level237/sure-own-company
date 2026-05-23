@@ -27,7 +27,7 @@ class ContactMail extends Mailable
     {
         return new Envelope(
             // L'expéditeur DOIT être l'adresse authentifiée sur ton SMTP
-            from: new Address('direction@sureowncompany.com', 'SureOwn Contact Form'),
+            from: new Address('webform@sureowncompany.com', 'SureOwn Contact Form'),
 
             // Le Reply-To permet de répondre directement au client
             replyTo: [

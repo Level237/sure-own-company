@@ -14,17 +14,18 @@
                         Notre Histoire
                     </div>
                     <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
-                        Notre engagement au service de vos besoins <span class="text-primary">logistiques</span>
+                        Notre engagement au service de vos besoins
                     </h2>
                     <p class="text-lg text-slate-600 leading-relaxed">
-                        Fondée avec la vision de révolutionner le transport de carburant et la logistique industrielle,
-                        SureOwnCompany s'est imposée comme un partenaire de confiance pour les entreprises exigeantes.
-                        Nous comprenons que dans notre secteur, la fiabilité n'est pas une option, c'est une nécessité
+                        Fondée avec la vision de devenir la reference dans le transport de carburant générale et
+                        industrielle,
+                        SureOwnCompany s'impose comme un partenaire de confiance pour les entreprises exigeantes.
+                        Nous comprenons que dans notre secteur, la fiabilité est une nécessité
                         absolue.
                     </p>
                     <p class="text-lg text-slate-600 leading-relaxed">
                         Grâce à notre flotte moderne et des technologies de pointe, nous vous garantissons une sécurité
-                        maximale et une traçabilité totale à chaque étape de l’approvisionnement .
+                        maximale et une traçabilité totale à chaque étape de nos opérations.
                     </p>
 
                 </div>
@@ -129,7 +130,7 @@
                     </div>
                     <h3 class="text-2xl font-bold text-slate-900 mb-4">Notre Vision</h3>
                     <p class="text-slate-600 leading-relaxed">
-                        Devenir une référence de sérieux, d’efficacité et de constance dans l'exécution de nos
+                        Devenir la référence de sérieux, d’efficacité et de constance dans l'exécution de nos
                         opérations.
                     </p>
                 </div>

@@ -7,20 +7,16 @@
             'category' => 'Énergie & Logistique',
             'image' => 'assets/images/why-choose-us.png',
             'icon' => 'bus',
-            'description' => 'Transport interurbain et et transfrontalier de carburant et dérivés
-                                                                                                                                                                                                                            Gestion de flotte
-                                                                                                                                                                                                                            Suivi et coordination des livraisons
-                                                                                                                                                                                                                            Approvisionnement de sites industriels et stations
-                                                                                                                                                                                                                            Respect des normes HSE/QHSE
-                                                                                                                                                                                                                            Assistance logistique opérationnelle.',
+            'description' => 'Sure Own Company assure le transport sécurisé, national et transfrontalier des hydrocarbures. Nous disposons d’une flotte de camions-citernes de pointe, géo-localisés en temps réel.',
+
             'features' => [
                 'Sécurité' => 'Respect strict des normes HSE/QHSE, ADR et protocoles de transport pétrolier.
-                                                                                                                                                                                                                ',
+                                                                                                                                                                                                                                                                                                                    ',
                 'Traçabilité' => "Tracking en temps réel et coordination continue des opérations de livraison.",
 
                 'Capacité' => 'Flotte adaptée au transport de 20 000 à 36 000 litres pour répondre aux besoins opérationnels.',
 
-                'Couverture' => 'Transport et approvisionnement national et transfrontalier des sites industriels et stations services.'
+                'Couverture' => 'Transport et approvisionnement  des sites industriels et stations services.'
             ],
             'process' => [
                 ['title' => 'Commande', 'desc' => 'Validation de votre demande et planification logistique.'],
@@ -35,27 +31,24 @@
             'category' => 'Énergie & Logistique',
             'image' => 'assets/images/why-choose-us.png',
             'icon' => 'bus',
-            'description' => 'Nous accompagnons les entreprises dans la fourniture de matériels et consommables nécessaires à leur fonctionnement quotidien.Services détaillés
-                                                                                            Fournitures de bureau,
-                                                                                            Consommables bureautiques,
-                                                                                            Matériel administratif,
-                                                                                            Produits d’entretien,
-                                                                                            Produits d’hygiène,
-                                                                                            Fourniture multi-sectorielle,
-                                                                                            Approvisionnement sur demande.',
+            'description' => 'Nous accompagnons les entreprises dans la fourniture de matériels et consommables nécessaires à leur fonctionnement .A savoir :
+                                                                                                                                                                                                Fournitures et Consommables de bureau,
+                                                                                                                                                                                                Matériel administratif,
+                                                                                                                                                                                                Produits d’entretien,
+                                                                                                                                                                                                Produits d’hygiène.',
             'features' => [
                 'Approvisionnement' => 'Solutions adaptées aux besoins opérationnels des entreprises.',
-                'Disponibilité' => "Fourniture rapide de matériels et consommables essentiels (Fourniture et consommables bureautiques, matériel administratif, produits d'entretien, produits d'hygiène).",
+                'Disponibilité' => "Fourniture rapide de matériels et consommables essentiels (Fourniture et consommables de bureau, matériel administratif, produits d'entretien, produits d'hygiène).",
 
                 'Polyvalence' => ' Une offre multi-sectorielle pour différents environnements professionnels.',
 
-                'Réactivité' => 'Approvisionnement flexible et sur demande.'
+                'Réactivité' => 'Approvisionnement flexible et à la demande.'
             ],
             'process' => [
-                ['title' => 'Commande', 'desc' => 'Validation de votre demande et planification logistique.'],
-                ['title' => 'Chargement', 'desc' => 'Chargement sécurisé en dépôt pétrolier certifié.'],
-                ['title' => 'Acheminement', 'desc' => 'Transport sous haute surveillance et suivi satellite.'],
-                ['title' => 'Livraison', 'desc' => 'Dépotage sécurisé et vérification de la qualité.']
+                ['title' => 'Besoin', 'desc' => 'Audit de vos besoins spécifiques en équipement.'],
+                ['title' => 'Sourcing', 'desc' => 'Sélection des meilleurs produits au meilleur prix.'],
+                ['title' => 'Livraison', 'desc' => 'Logistique dédiée jusqu\'à votre site industriel.'],
+                ['title' => 'Support', 'desc' => 'Accompagnement technique et service après-vente.']
             ]
         ],
         'equipements-de-protection-et-securite' => [
@@ -64,18 +57,12 @@
             'image' => 'assets/images/security.jpg',
 
             'icon' => 'package-check',
-            'description' => 'Sure Own Company fournit des équipements de protection individuelle adaptés aux environnements industriels, logistiques et techniques.Services détaillés:
-                                                                    Casques de sécurité
-                                                                    Chaussures de sécurité
-                                                                    Gants de protection
-                                                                    Gilets réfléchissants
-                                                                    Combinaisons de travail
-                                                                    Lunettes et protections spécialisées
-                                                                    Équipements conformes aux exigences HSE',
+            'description' => 'Sure Own Company fournit des équipements de protection individuelle adaptés aux environnements industriels, logistiques ,techniques
+                                                                                                                                                                        et conformes aux exigences HSE.',
             'features' => [
-                'Protection' => 'Équipements adaptés aux environnements industriels et techniques (Casques de sécurité, chaussures de sécurités, gants de protection, gilets réfléchissants, combinaisons de travail, lunettes et protections spécialisées).',
-                'Sécurité' => 'Conformité aux exigences et standards HSE.',
-                'Fiabilité' => 'Des équipements conçus pour les opérations professionnelles exigeantes.',
+                'Protection' => 'Équipements fiables pour vos manutentions industrielles et techniques  (Casques et chaussures de  sécurité,gants de protection, gilets réfléchissants, combinaisons de travail, lunettes et protections spécialisées).',
+                'Qualité' => 'Conformité aux exigences et standards HSE.',
+                'Fiabilité' => 'Des équipements conçus pour des opérations professionnelles exigeantes.',
                 'Prévention' => 'Réduction des risques pour la sécurité des équipes sur le terrain.'
             ],
             'process' => [
@@ -92,24 +79,18 @@
             'icon' => 'hard-hat',
             'description' => 'Nous proposons des solutions d’approvisionnement en pièces et équipements industriels conformément au cahier de charge et références spécifiques des équipements. 
 
-                                                Services détaillés
-                                                Pièces industrielles
-                                                Équipements techniques
-                                                Accessoires mécaniques
-                                                Pièces pour maintenance
-                                                Approvisionnement industriel spécifique
-                                                Recherche et fourniture sur cahier de charge.',
+                                                                                                                                        ',
             'features' => [
                 'Approvisionnement technique' => 'Solutions adaptées aux besoins industriels spécifiques.',
                 'Conformité' => 'Fourniture selon cahier de charge et références équipements.',
-                'Maintenance industrielle' => 'Pièces et accessoires dédiés à la continuité des opérations (Pièces industrielles, équipements techniques, accessoires mécaniques, pièces pour maintenance).',
+                'Maintenance industrielle' => 'Pièces et accessoires dédiés à la continuité des opérations : Pièces industrielles, équipements techniques, accessoires mécaniques, pièces pour maintenance.',
                 'Fiabilité' => 'Des équipements techniques adaptés aux exigences du terrain.'
             ],
             'process' => [
-                ['title' => 'Évaluation', 'desc' => 'Analyse des risques de votre environnement de travail.'],
-                ['title' => 'Sélection', 'desc' => 'Choix des EPI les plus adaptés à vos contraintes.'],
-                ['title' => 'Échantillonnage', 'desc' => 'Test des produits pour validation par vos équipes.'],
-                ['title' => 'Distribution', 'desc' => 'Livraison et formation à l\'utilisation correcte.']
+                ['title' => 'Besoin', 'desc' => 'Audit de vos besoins spécifiques en équipement.'],
+                ['title' => 'Sourcing', 'desc' => 'Sélection des meilleurs produits au meilleur prix.'],
+                ['title' => 'Livraison', 'desc' => 'Logistique dédiée jusqu\'à votre site industriel.'],
+                ['title' => 'Support', 'desc' => 'Accompagnement technique et service après-vente.']
             ]
         ]
     ];

@@ -28,7 +28,7 @@ class ContactController extends Controller
             'message' => 'required|string',
         ]);
 
-        Mail::to('direction@sureowncompany.com')->send(new ContactMail($validatedData));
+        Mail::to('webform@sureowncompany.com')->send(new ContactMail($validatedData));
 
         return back()->with('success', 'Votre message a été envoyé avec succès. Nous vous contacterons bientôt.');
     }
